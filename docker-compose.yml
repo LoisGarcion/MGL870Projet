@@ -1,0 +1,33 @@
+version: '3.8'
+services:
+  dbuser:
+    image: postgres
+    container_name: user_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: "dbu"
+      POSTGRES_USER: "dbuser"
+      POSTGRES_PASSWORD: "dbpassword"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  springboot-app:
+    build:
+      context: ./MicroUser/UserSpringBoot
+      dockerfile: Dockerfile
+    container_name: user_springboot
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://dbuser:5432/dbu
+      SPRING_DATASOURCE_USERNAME: dbuser
+      SPRING_DATASOURCE_PASSWORD: dbpassword
+      SPRING_JPA_HIBERNATE_DDL_AUTO: create
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - dbuser
+
+volumes:
+  postgres_data:
