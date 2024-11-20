@@ -17,6 +17,8 @@ exporters:
     endpoint: "http://jaeger:4317" # Adjust endpoint to match Jaeger's OTLP endpoint
     tls:
       insecure: true
+  file:
+    path: "/etc/otelcol-contrib/otel-collector.log"
 extensions:
   # responsible for responding to health check calls on behalf of the collector
   health_check:
@@ -35,7 +37,7 @@ service:
     logs:
       receivers: [ otlp ]
       processors: [ batch ]
-      exporters: [ loki ]
+      exporters: [ loki, file ]
     traces:
       receivers: [ otlp ]
       processors: [ batch ]

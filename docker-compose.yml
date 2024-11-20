@@ -8,7 +8,7 @@ services:
       POSTGRES_USER: "dbuser"
       POSTGRES_PASSWORD: "dbpassword"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - ./Postgres/test:/var/lib/postgresql/data
     ports:
       - "5432:5432"
 
@@ -36,6 +36,7 @@ services:
       - --config=/etc/otelcol-contrib/otel-collector.yml
     volumes:
       - ./Collector/otel-collector.yml:/etc/otelcol-contrib/otel-collector.yml
+      - ./Collector/otel-collector.log:/etc/otelcol-contrib/otel-collector.log
     ports:
       - "1888:1888" # pprof extension
       - "8888:8888" # Prometheus metrics exposed by the Collector
@@ -62,8 +63,10 @@ services:
   loki:
     container_name: loki
     image: grafana/loki:latest
-    command: -config.file=/etc/loki/local-config.yaml
+    command: -config.file=/etc/loki/loki-config.yaml
     restart: always
+    volumes:
+      - ./Loki:/etc/loki
     ports:
       - "3100"
 
@@ -86,6 +89,3 @@ services:
       - prometheus
       - loki
       - jaeger
-
-volumes:
-  postgres_data:

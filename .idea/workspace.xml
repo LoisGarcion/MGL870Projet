@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44894a78-3de7-467d-b599-d092983923e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collector/otel-collector.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Grafana/grafana-datasources.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/otlpjavaagent/opentelemetry-javaagent.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/otlpjavaagent/otel.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Prometheus/prometheus.yml" afterDir="false" />
+    <list default="true" id="44894a78-3de7-467d-b599-d092983923e0" name="Changes" comment="Beaucoup d'avance, ajout du javaagent pour générer automatiquement les metriques / traces / logs de java spring boot. Ajout de loki, prometheus et jaeger. Ajout de grafana">
+      <change afterPath="$PROJECT_DIR$/Collector/otel-collector.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Loki/loki-config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroUser/UserSpringBoot/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroUser/UserSpringBoot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collector/otel-collector.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Collector/otel-collector.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,18 +20,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "LoisGarcion"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LoisGarcion&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/LoisGarcion/MGL870Projet.git",
-    "accountId": "8b7c3915-d281-432d-afbb-95179a60a771"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LoisGarcion/MGL870Projet.git&quot;,
+    &quot;accountId&quot;: &quot;8b7c3915-d281-432d-afbb-95179a60a771&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -46,26 +41,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/loisg/IdeaProjects/MGL870Projet/MicroUser/UserSpringBoot&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/loisg/IdeaProjects/MGL870Projet/MicroUser/UserSpringBoot",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="MGL870Projet" />
@@ -97,11 +92,26 @@
       <updated>1731983370088</updated>
       <workItem from="1731983371512" duration="2776000" />
       <workItem from="1731986686708" duration="2623000" />
-      <workItem from="1732040959730" duration="6763000" />
+      <workItem from="1732040959730" duration="8251000" />
+      <workItem from="1732055341601" duration="36000" />
+      <workItem from="1732123664363" duration="9415000" />
     </task>
+    <task id="LOCAL-00001" summary="Beaucoup d'avance, ajout du javaagent pour générer automatiquement les metriques / traces / logs de java spring boot. Ajout de loki, prometheus et jaeger. Ajout de grafana">
+      <option name="closed" value="true" />
+      <created>1732048546970</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732048546970</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Beaucoup d'avance, ajout du javaagent pour générer automatiquement les metriques / traces / logs de java spring boot. Ajout de loki, prometheus et jaeger. Ajout de grafana" />
+    <option name="LAST_COMMIT_MESSAGE" value="Beaucoup d'avance, ajout du javaagent pour générer automatiquement les metriques / traces / logs de java spring boot. Ajout de loki, prometheus et jaeger. Ajout de grafana" />
   </component>
 </project>
