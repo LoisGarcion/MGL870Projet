@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44894a78-3de7-467d-b599-d092983923e0" name="Changes" comment="J'arrive a recup mes logs grâce au otel collector, maintenant faudra isoler tout ca">
+    <list default="true" id="44894a78-3de7-467d-b599-d092983923e0" name="Changes" comment="beaucoup de modifs, fichier python pour recup les timestamp et body. Protocole de test K6 avec séparation en block, ...">
       <change afterPath="$PROJECT_DIR$/Collector/otel-collector.metrics" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Collector/otel-collector.traces" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Controller/ExceptionController.java" afterDir="false" />
@@ -142,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732138774941</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="beaucoup de modifs, fichier python pour recup les timestamp et body. Protocole de test K6 avec séparation en block, ...">
+      <option name="closed" value="true" />
+      <created>1732248625703</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732248625703</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +159,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Beaucoup d'avance, ajout du javaagent pour générer automatiquement les metriques / traces / logs de java spring boot. Ajout de loki, prometheus et jaeger. Ajout de grafana" />
     <MESSAGE value="J'arrive a recup mes logs grâce au otel collector, maintenant faudra isoler tout ca" />
-    <option name="LAST_COMMIT_MESSAGE" value="J'arrive a recup mes logs grâce au otel collector, maintenant faudra isoler tout ca" />
+    <MESSAGE value="beaucoup de modifs, fichier python pour recup les timestamp et body. Protocole de test K6 avec séparation en block, ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="beaucoup de modifs, fichier python pour recup les timestamp et body. Protocole de test K6 avec séparation en block, ..." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MGL870Projet$process.coverage" NAME="process Coverage Results" MODIFIED="1732237910283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python" />
