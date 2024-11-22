@@ -12,11 +12,11 @@ services:
     ports:
       - "5432:5432"
 
-  springboot-app:
+  user-app:
     build:
       context: ./MicroUser/UserSpringBoot
       dockerfile: Dockerfile
-    container_name: user_springboot
+    container_name: user-app
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://dbuser:5432/dbu
       SPRING_DATASOURCE_USERNAME: dbuser
@@ -37,6 +37,8 @@ services:
     volumes:
       - ./Collector/otel-collector.yml:/etc/otelcol-contrib/otel-collector.yml
       - ./Collector/otel-collector.log:/etc/otelcol-contrib/otel-collector.log
+      - ./Collector/otel-collector.traces:/etc/otelcol-contrib/otel-collector.traces
+      - ./Collector/otel-collector.metrics:/etc/otelcol-contrib/otel-collector.metrics
     ports:
       - "1888:1888" # pprof extension
       - "8888:8888" # Prometheus metrics exposed by the Collector
@@ -46,6 +48,23 @@ services:
       - "4317:4317" # OTLP gRPC receiver
       - "4318:4318" # OTLP http receiver
       #- "55679:55679" # zpages extension
+
+  k6:
+    image: grafana/k6:latest
+    container_name: k6
+    entrypoint: [ "sleep", "infinity" ] # Start idle for manual execution
+    volumes:
+      - ./k6:/tests # Mount your k6 test scripts
+    depends_on:
+      - user-app
+    restart: always
+    ports:
+      - "6565:6565" # k6 cloud
+      - "6566:6566" # k6 cloud
+      - "6567:6567" # k6 cloud
+      - "6568:6568" # k6 cloud
+      - "6569:6569" # k6 cloud
+      - "6560:6560" # k6 cloud
 
   prometheus:
     container_name: prometheus

@@ -4,8 +4,8 @@ import MicroUser.UserSpringBoot.Model.UserModel;
 import MicroUser.UserSpringBoot.Repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.event.Level;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +17,7 @@ public class UserService {
     private UserRepository userRepository;
 
     public UserModel saveUser(UserModel user) {
+        log.info("Saving user");
         return userRepository.save(user);
     }
 

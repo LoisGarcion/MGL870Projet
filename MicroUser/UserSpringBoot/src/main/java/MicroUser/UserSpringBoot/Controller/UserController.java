@@ -22,9 +22,4 @@ public class UserController {
     public List<UserModel> getAllUsers() {
         return userService.getAllUsers();
     }
-
-    @GetMapping("/test")
-    public String getTest() {
-        return "test";
-    }
 }

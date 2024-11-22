@@ -14,11 +14,15 @@ exporters:
   loki:
     endpoint: "http://loki:3100/loki/api/v1/push"
   otlp:
-    endpoint: "http://jaeger:4317" # Adjust endpoint to match Jaeger's OTLP endpoint
+    endpoint: "http://jaeger:4317"
     tls:
       insecure: true
-  file:
+  file/logs:
     path: "/etc/otelcol-contrib/otel-collector.log"
+  file/traces:
+    path: "/etc/otelcol-contrib/otel-collector.traces"
+  file/metrics:
+    path: "/etc/otelcol-contrib/otel-collector.metrics"
 extensions:
   # responsible for responding to health check calls on behalf of the collector
   health_check:
@@ -33,12 +37,12 @@ service:
     metrics:
       receivers: [ otlp ]
       processors: [ batch ]
-      exporters: [ prometheus ]
+      exporters: [ prometheus, file/metrics]
     logs:
       receivers: [ otlp ]
       processors: [ batch ]
-      exporters: [ loki, file ]
+      exporters: [ loki, file/logs ]
     traces:
       receivers: [ otlp ]
       processors: [ batch ]
-      exporters: [ otlp ]
+      exporters: [ otlp, file/traces ]
