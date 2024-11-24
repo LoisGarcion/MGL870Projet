@@ -1,13 +1,17 @@
 import http from 'k6/http';
 import { sleep } from 'k6';
 
-export let options = {
+export const options = {
   vus: 10, // Number of virtual users
-  duration: '30s', // Duration of the test
-  thresholds: {
-    http_req_duration: ['p(95)<500'], // 95% of requests should be below 500ms
-  },
+  iterations: 5000, // Number of blocks to simulate
 };
+
+const BASE_URL = 'http://user-app:8080/api';
+const ANOMALY_PROBABILITY = 0.3; // 30% chance of anomaly
+const REQUESTS_PER_BLOCK = 500;
+
+
+const BASE_URL = 'http://user-app:8080/api/';
 
 //Créer une methode de test pour tester l'API :
 //Définir aléatoirement si il y a une anomalie ou non
@@ -21,6 +25,43 @@ export let options = {
 //Faire environ 5000 blocs avec jusqu'à 500 requêtes par blocks
 
 export default function () {
-  http.get('http://user-app:8080/api/user/all');
-  sleep(1);
+  // Create a new block before starting the requests
+  const isAnomalous = Math.random() < ANOMALY_PROBABILITY; // Randomly decide if this block has an anomaly
+
+  const blockResponse = http.post(`${BASE_URL}/k6/createBlock`, JSON.stringify({ anomaly: isAnomalous }), {
+    headers: { 'Content-Type': 'application/json' },
+  });
+
+  check(blockResponse, {
+    'Block created successfully': (res) => res.status === 200,
+  });
+
+  // Execute requests for the block
+  for (let i = 0; i < REQUESTS_PER_BLOCK; i++) {
+    // Perform create operation
+    const createResponse = http.post(`${BASE_URL}/create`, JSON.stringify({ name: `test-${i}`, email: `test-${i}@mail.com` }), {
+      headers: { 'Content-Type': 'application/json' },
+    });
+
+    check(createResponse, {
+      'Create operation successful': (res) => res.status === 200,
+    });
+
+    // Perform read operation
+    const readResponse = http.get(`${BASE_URL}/user/all`);
+    check(readResponse, {
+      'Read operation successful': (res) => res.status === 200,
+    });
+
+    // Simulate a short delay between requests
+    sleep(0.01);
+  }
+  // Handle anomaly
+  if (isAnomalous) {
+    const exceptionId = Math.floor(Math.random() * 20) + 1;
+    const exceptionResponse = http.get(`${BASE_URL}/exception/exception${exceptionId}`);
+    check(exceptionResponse, {
+      'Exception handled successfully': (res) => res.status === 200,
+    });
+  }
 }
