@@ -1,4 +1,8 @@
+import csv
+import json
 import re
+from collections import Counter
+
 import pandas as pd
 from drain3 import TemplateMiner
 from drain3.template_miner_config import TemplateMinerConfig
@@ -41,7 +45,6 @@ for i,line in enumerate(logs):
     match = log_pattern.match(line)
     if match :
         log_content = match.group("Content")
-        print(f"log_content: {log_content}")
         drain_parser.add_log_message(log_content)
     else :
         print(f"No match for line {i}: {line}")
@@ -74,3 +77,40 @@ parsed_df.to_csv("parsedlogs.csv", index=False)
 
 template_df = pd.DataFrame(templates.items(), columns=["Template ID", "Template Description"])
 template_df.to_csv("templates.csv", index=False)
+
+with open('parsedlogs.csv', 'r') as csv_file:
+    csv_reader = csv.reader(csv_file)
+    next(csv_reader)  # Skip the header
+    events = [(int(row[0]) // 1_000_000, int(row[1])) for row in csv_reader]  # [(timestamp, event_id), ...]
+
+# Load the JSON file
+with open('blocks.json', 'r') as json_file:
+    blocks = json.load(json_file)
+
+# Sort events and blocks by timestamp
+events.sort(key=lambda x: x[0])
+blocks.sort(key=lambda x: x['timestamp'])
+
+# Count events for each block
+output_rows = []
+event_ids = {event_id for _, event_id in events}  # Unique event IDs for header
+for i, block in enumerate(blocks):
+    start_time = block['timestamp']
+    end_time = blocks[i + 1]['timestamp'] if i + 1 < len(blocks) else float('inf')
+
+    # Count events within the range
+    counts = Counter(event_id for timestamp, event_id in events if start_time <= timestamp < end_time)
+
+    # Create a row with the block's timestamp, anomaly, and counts
+    row = [block['timestamp'], block['anomaly']]
+    row.extend(counts.get(event_id, 0) for event_id in sorted(event_ids))
+    output_rows.append(row)
+
+# Write to a new CSV file
+header = ['Timestamp', 'Label'] + sorted(event_ids)
+with open('output.csv', 'w', newline='') as output_file:
+    csv_writer = csv.writer(output_file)
+    csv_writer.writerow(header)
+    csv_writer.writerows(output_rows)
+
+print("Output CSV created: output.csv")
