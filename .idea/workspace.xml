@@ -5,23 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44894a78-3de7-467d-b599-d092983923e0" name="Changes" comment="beaucoup de modifs, fichier python pour recup les timestamp et body. Protocole de test K6 avec séparation en block, ...">
-      <change afterPath="$PROJECT_DIR$/Collector/otel-collector.metrics" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collector/otel-collector.traces" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Controller/ExceptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Controller/K6Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Model/K6Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Repository/K6Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Service/K6Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/drain3.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python/process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k6/userTest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroProduct/ProductSpringBoot/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroProduct/ProductSpringBoot/src/main/java/com/example/ProductSpringBoot/Controller/ExceptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroProduct/ProductSpringBoot/src/main/java/com/example/ProductSpringBoot/Controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroProduct/ProductSpringBoot/src/main/java/com/example/ProductSpringBoot/Model/ProductModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroProduct/ProductSpringBoot/src/main/java/com/example/ProductSpringBoot/Repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroProduct/ProductSpringBoot/src/main/java/com/example/ProductSpringBoot/Service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Dto/BuyRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/ResponseModel/ProductResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostgresProduct/config/postgresql.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PostgresUser/config/postgresql.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Collector/otel-collector.log" beforeDir="false" afterPath="$PROJECT_DIR$/Collector/otel-collector.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collector/otel-collector.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Collector/otel-collector.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Model/UserModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prometheus/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Prometheus/prometheus.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +49,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/LoisGarcion/MGL870Projet.git&quot;,
-    &quot;accountId&quot;: &quot;8b7c3915-d281-432d-afbb-95179a60a771&quot;
+    &quot;accountId&quot;: &quot;0727954e-673d-4157-a3b9-4ce298c89111&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -69,7 +69,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/loisg/IdeaProjects/MGL870Projet&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/loisb/IdeaProjects/MGL870Projet/MicroProduct/ProductSpringBoot/src/main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -82,6 +82,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\loisb\IdeaProjects\MGL870Projet\MicroProduct\ProductSpringBoot\src\main" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="MGL870Projet" />
@@ -98,8 +103,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
-        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
       </set>
     </attachedChunks>
   </component>
@@ -117,6 +122,11 @@
       <workItem from="1732055341601" duration="36000" />
       <workItem from="1732123664363" duration="10220000" />
       <workItem from="1732225257070" duration="13316000" />
+      <workItem from="1732662392856" duration="647000" />
+      <workItem from="1733869260752" duration="78000" />
+      <workItem from="1734061883057" duration="413000" />
+      <workItem from="1734062351375" duration="6776000" />
+      <workItem from="1734094935822" duration="4705000" />
     </task>
     <task id="LOCAL-00001" summary="Beaucoup d'avance, ajout du javaagent pour générer automatiquement les metriques / traces / logs de java spring boot. Ajout de loki, prometheus et jaeger. Ajout de grafana">
       <option name="closed" value="true" />
@@ -160,7 +170,7 @@
     <MESSAGE value="Beaucoup d'avance, ajout du javaagent pour générer automatiquement les metriques / traces / logs de java spring boot. Ajout de loki, prometheus et jaeger. Ajout de grafana" />
     <MESSAGE value="J'arrive a recup mes logs grâce au otel collector, maintenant faudra isoler tout ca" />
     <MESSAGE value="beaucoup de modifs, fichier python pour recup les timestamp et body. Protocole de test K6 avec séparation en block, ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="beaucoup de modifs, fichier python pour recup les timestamp et body. Protocole de test K6 avec séparation en block, ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MGL870Projet$process.coverage" NAME="process Coverage Results" MODIFIED="1732237910283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python" />

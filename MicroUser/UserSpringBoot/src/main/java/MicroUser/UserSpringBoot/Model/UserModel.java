@@ -10,6 +10,7 @@ public class UserModel {
 
     private String name;
     private String email;
+    private int money;
 
     public Long getId() {
         return id;
@@ -33,5 +34,13 @@ public class UserModel {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
     }
 }

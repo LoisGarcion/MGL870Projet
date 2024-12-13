@@ -1,5 +1,6 @@
 package MicroUser.UserSpringBoot.Controller;
 
+import MicroUser.UserSpringBoot.Dto.BuyRequestDto;
 import MicroUser.UserSpringBoot.Model.UserModel;
 import MicroUser.UserSpringBoot.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,5 +22,10 @@ public class UserController {
     @GetMapping("/all")
     public List<UserModel> getAllUsers() {
         return userService.getAllUsers();
+    }
+
+    @PostMapping("/buy")
+    public UserModel buyProduct(@RequestBody BuyRequestDto buyRequestDto) {
+        return userService.buyProduct(buyRequestDto);
     }
 }

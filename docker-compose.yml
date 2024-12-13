@@ -6,11 +6,19 @@ services:
     environment:
       POSTGRES_DB: "dbu"
       POSTGRES_USER: "dbuser"
-      POSTGRES_PASSWORD: "dbpassword"
+      POSTGRES_PASSWORD: "dbuserpassword"
     volumes:
-      - ./Postgres/test:/var/lib/postgresql/data
+      - ./PostgresUser/test:/var/lib/postgresql/data
+      - ./PostgresProduct/config:/etc/postgresql/conf.d
     ports:
       - "5432:5432"
+    logging:
+      driver: loki
+      options:
+        loki-url: "http://loki:3100/loki/api/v1/push"
+        loki-batch-size: "400"
+        loki-batch-wait: "1s"
+        loki-external-labels: "container_name=user_postgres"
 
   user-app:
     build:
@@ -20,13 +28,66 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://dbuser:5432/dbu
       SPRING_DATASOURCE_USERNAME: dbuser
-      SPRING_DATASOURCE_PASSWORD: dbpassword
+      SPRING_DATASOURCE_PASSWORD: dbuserpassword
       SPRING_JPA_HIBERNATE_DDL_AUTO: create
     restart: always
     ports:
       - "8080:8080"
     depends_on:
       - dbuser
+    logging:
+      driver: loki
+      options:
+        loki-url: "http://loki:3100/loki/api/v1/push"
+        loki-batch-size: "400"
+        loki-batch-wait: "1s"
+        loki-external-labels: "container_name=user-app"
+
+  dbproduct:
+    image: postgres
+    container_name: product_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: "dbp"
+      POSTGRES_USER: "dbproduct"
+      POSTGRES_PASSWORD: "dbproductpassword"
+    volumes:
+      - ./PostgresProduct/test:/var/lib/postgresql/data
+      - ./PostgresProduct/config:/etc/postgresql/conf.d
+    ports:
+      - "5433:5432"
+    depends_on:
+      - dbuser
+    logging:
+      driver: loki
+      options:
+        loki-url: "http://loki:3100/loki/api/v1/push"
+        loki-batch-size: "400"
+        loki-batch-wait: "1s"
+        loki-external-labels: "container_name=product_postgres"
+
+  product-app:
+    build:
+      context: ./MicroProduct/ProductSpringBoot
+      dockerfile: Dockerfile
+    container_name: product-app
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://dbproduct:5432/dbp
+      SPRING_DATASOURCE_USERNAME: dbproduct
+      SPRING_DATASOURCE_PASSWORD: dbproductpassword
+      SPRING_JPA_HIBERNATE_DDL_AUTO: create
+    restart: always
+    ports:
+      - "8081:8080"
+    depends_on:
+      - dbproduct
+    logging:
+      driver: loki
+      options:
+        loki-url: "http://loki:3100/loki/api/v1/push"
+        loki-batch-size: "400"
+        loki-batch-wait: "1s"
+        loki-external-labels: "container_name=product-app"
 
   otel-collector:
     image: otel/opentelemetry-collector-contrib:0.82.0
