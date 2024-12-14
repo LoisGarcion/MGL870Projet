@@ -1,0 +1,415 @@
+{
+    "status": "success",
+    "data": {
+        "resultType": "streams",
+        "result": [
+            {
+                "stream": {
+                    "detected_level": "WARN",
+                    "exporter": "OTLP",
+                    "instance": "e664dedd-9024-4287-baad-879fbdb69c71",
+                    "job": "MicroProduct/ProductSpringBoot",
+                    "level": "WARN",
+                    "service_name": "MicroProduct/ProductSpringBoot"
+                },
+                "values": [
+                    [
+                        "1734190003199590122",
+                        "{\"body\":\"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning\",\"severity\":\"WARN\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration\"}}"
+                    ]
+                ]
+            },
+            {
+                "stream": {
+                    "detected_level": "WARN",
+                    "exporter": "OTLP",
+                    "instance": "0aa4e005-337d-4e92-9944-e94ae6eb9182",
+                    "job": "MicroUser/UserSpringBoot",
+                    "level": "WARN",
+                    "service_name": "MicroUser/UserSpringBoot"
+                },
+                "values": [
+                    [
+                        "1734190001397429739",
+                        "{\"body\":\"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning\",\"severity\":\"WARN\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration\"}}"
+                    ],
+                    [
+                        "1734189998969870012",
+                        "{\"body\":\"table \\\"user_model\\\" does not exist, skipping\",\"severity\":\"WARN\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.hibernate.engine.jdbc.spi.SqlExceptionHelper\"}}"
+                    ],
+                    [
+                        "1734189998969179204",
+                        "{\"body\":\"SQL Warning Code: 0, SQLState: 00000\",\"severity\":\"WARN\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.hibernate.engine.jdbc.spi.SqlExceptionHelper\"}}"
+                    ],
+                    [
+                        "1734189998965470166",
+                        "{\"body\":\"table \\\"k6model\\\" does not exist, skipping\",\"severity\":\"WARN\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.hibernate.engine.jdbc.spi.SqlExceptionHelper\"}}"
+                    ],
+                    [
+                        "1734189998964461756",
+                        "{\"body\":\"SQL Warning Code: 0, SQLState: 00000\",\"severity\":\"WARN\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.hibernate.engine.jdbc.spi.SqlExceptionHelper\"}}"
+                    ]
+                ]
+            },
+            {
+                "stream": {
+                    "detected_level": "INFO",
+                    "exporter": "OTLP",
+                    "instance": "e664dedd-9024-4287-baad-879fbdb69c71",
+                    "job": "MicroProduct/ProductSpringBoot",
+                    "level": "INFO",
+                    "service_name": "MicroProduct/ProductSpringBoot"
+                },
+                "values": [
+                    [
+                        "1734191186488582949",
+                        "{\"body\":\"Saving product\",\"traceid\":\"b6deb0fa933846341b1ccfdb2571c7dc\",\"spanid\":\"e17a4c345badff6e\",\"severity\":\"INFO\",\"flags\":1,\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"com.example.ProductSpringBoot.Service.ProductService\"}}"
+                    ],
+                    [
+                        "1734191068170940682",
+                        "{\"body\":\"Saving product\",\"traceid\":\"06832e9e9b0df105287fc56df0596c40\",\"spanid\":\"276fa2ac43715acc\",\"severity\":\"INFO\",\"flags\":1,\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"com.example.ProductSpringBoot.Service.ProductService\"}}"
+                    ],
+                    [
+                        "1734191067547513913",
+                        "{\"body\":\"Completed initialization in 39 ms\",\"traceid\":\"06832e9e9b0df105287fc56df0596c40\",\"spanid\":\"276fa2ac43715acc\",\"severity\":\"INFO\",\"flags\":1,\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.web.servlet.DispatcherServlet\"}}"
+                    ],
+                    [
+                        "1734191067506246069",
+                        "{\"body\":\"Initializing Servlet 'dispatcherServlet'\",\"traceid\":\"06832e9e9b0df105287fc56df0596c40\",\"spanid\":\"276fa2ac43715acc\",\"severity\":\"INFO\",\"flags\":1,\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.web.servlet.DispatcherServlet\"}}"
+                    ],
+                    [
+                        "1734191067495000000",
+                        "{\"body\":\"Initializing Spring DispatcherServlet 'dispatcherServlet'\",\"traceid\":\"06832e9e9b0df105287fc56df0596c40\",\"spanid\":\"276fa2ac43715acc\",\"severity\":\"INFO\",\"flags\":1,\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]\"}}"
+                    ],
+                    [
+                        "1734190005770322978",
+                        "{\"body\":\"Started ProductSpringBootApplication in 35.575 seconds (process running for 51.176)\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"com.example.ProductSpringBoot.ProductSpringBootApplication\"}}"
+                    ],
+                    [
+                        "1734190005730139710",
+                        "{\"body\":\"Tomcat started on port 8080 (http) with context path '/'\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.boot.web.embedded.tomcat.TomcatWebServer\"}}"
+                    ],
+                    [
+                        "1734190001018861558",
+                        "{\"body\":\"Initialized JPA EntityManagerFactory for persistence unit 'default'\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean\"}}"
+                    ],
+                    [
+                        "1734190000741064321",
+                        "{\"body\":\"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator\"}}"
+                    ],
+                    [
+                        "1734189991097364785",
+                        "{\"body\":\"HHH10001005: Database info:\\n\\tDatabase JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']\\n\\tDatabase driver: undefined/unknown\\n\\tDatabase version: 17.2\\n\\tAutocommit mode: undefined/unknown\\n\\tIsolation level: undefined/unknown\\n\\tMinimum pool size: undefined/unknown\\n\\tMaximum pool size: undefined/unknown\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.hibernate.orm.connections.pooling\"}}"
+                    ],
+                    [
+                        "1734189990311435625",
+                        "{\"body\":\"HikariPool-1 - Start completed.\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"com.zaxxer.hikari.HikariDataSource\"}}"
+                    ],
+                    [
+                        "1734189990260734573",
+                        "{\"body\":\"HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6fe43257\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"com.zaxxer.hikari.pool.HikariPool\"}}"
+                    ],
+                    [
+                        "1734189988713102020",
+                        "{\"body\":\"HikariPool-1 - Starting...\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"com.zaxxer.hikari.HikariDataSource\"}}"
+                    ],
+                    [
+                        "1734189988366940718",
+                        "{\"body\":\"No LoadTimeWeaver setup: ignoring JPA class transformer\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo\"}}"
+                    ],
+                    [
+                        "1734189985354546872",
+                        "{\"body\":\"HHH000026: Second-level cache disabled\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.hibernate.cache.internal.RegionFactoryInitiator\"}}"
+                    ],
+                    [
+                        "1734189985029107475",
+                        "{\"body\":\"HHH000412: Hibernate ORM core version 6.6.2.Final\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.hibernate.Version\"}}"
+                    ],
+                    [
+                        "1734189984410184925",
+                        "{\"body\":\"HHH000204: Processing PersistenceUnitInfo [name: default]\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.hibernate.jpa.internal.util.LogHelper\"}}"
+                    ],
+                    [
+                        "1734189983225180031",
+                        "{\"body\":\"Root WebApplicationContext: initialization completed in 9164 ms\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext\"}}"
+                    ],
+                    [
+                        "1734189983213000000",
+                        "{\"body\":\"Initializing Spring embedded WebApplicationContext\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]\"}}"
+                    ],
+                    [
+                        "1734189983027000000",
+                        "{\"body\":\"Starting Servlet engine: [Apache Tomcat/10.1.33]\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.apache.catalina.core.StandardEngine\"}}"
+                    ],
+                    [
+                        "1734189983025000000",
+                        "{\"body\":\"Starting service [Tomcat]\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.apache.catalina.core.StandardService\"}}"
+                    ],
+                    [
+                        "1734189982879643810",
+                        "{\"body\":\"Tomcat initialized with port 8080 (http)\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.boot.web.embedded.tomcat.TomcatWebServer\"}}"
+                    ],
+                    [
+                        "1734189979212562930",
+                        "{\"body\":\"Finished Spring Data repository scanning in 255 ms. Found 1 JPA repository interface.\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.data.repository.config.RepositoryConfigurationDelegate\"}}"
+                    ],
+                    [
+                        "1734189978896479764",
+                        "{\"body\":\"Bootstrapping Spring Data JPA repositories in DEFAULT mode.\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.data.repository.config.RepositoryConfigurationDelegate\"}}"
+                    ],
+                    [
+                        "1734189973755535503",
+                        "{\"body\":\"No active profile set, falling back to 1 default profile: \\\"default\\\"\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"com.example.ProductSpringBoot.ProductSpringBootApplication\"}}"
+                    ],
+                    [
+                        "1734189973700695853",
+                        "{\"body\":\"Starting ProductSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"a0f2461665b6976d6496a1ced7dda7a42000b3521cfd4da106af6783650dabab\",\"host.arch\":\"amd64\",\"host.name\":\"a0f2461665b6\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"e664dedd-9024-4287-baad-879fbdb69c71\",\"service.name\":\"ProductSpringBoot\",\"service.namespace\":\"MicroProduct\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"com.example.ProductSpringBoot.ProductSpringBootApplication\"}}"
+                    ]
+                ]
+            },
+            {
+                "stream": {
+                    "detected_level": "INFO",
+                    "exporter": "OTLP",
+                    "instance": "0aa4e005-337d-4e92-9944-e94ae6eb9182",
+                    "job": "MicroUser/UserSpringBoot",
+                    "level": "INFO",
+                    "service_name": "MicroUser/UserSpringBoot"
+                },
+                "values": [
+                    [
+                        "1734190003617580124",
+                        "{\"body\":\"Started UserSpringBootApplication in 36.253 seconds (process running for 50.804)\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"MicroUser.UserSpringBoot.UserSpringBootApplication\"}}"
+                    ],
+                    [
+                        "1734190003561791167",
+                        "{\"body\":\"Tomcat started on port 8080 (http) with context path '/'\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.boot.web.embedded.tomcat.TomcatWebServer\"}}"
+                    ],
+                    [
+                        "1734189999064728294",
+                        "{\"body\":\"Initialized JPA EntityManagerFactory for persistence unit 'default'\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean\"}}"
+                    ],
+                    [
+                        "1734189998856112934",
+                        "{\"body\":\"HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator\"}}"
+                    ],
+                    [
+                        "1734189990556123785",
+                        "{\"body\":\"HikariPool-1 - Start completed.\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"com.zaxxer.hikari.HikariDataSource\"}}"
+                    ],
+                    [
+                        "1734189990446029284",
+                        "{\"body\":\"HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2045108\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"com.zaxxer.hikari.pool.HikariPool\"}}"
+                    ],
+                    [
+                        "1734189988019984397",
+                        "{\"body\":\"HikariPool-1 - Starting...\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"com.zaxxer.hikari.HikariDataSource\"}}"
+                    ],
+                    [
+                        "1734189987745881933",
+                        "{\"body\":\"No LoadTimeWeaver setup: ignoring JPA class transformer\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo\"}}"
+                    ],
+                    [
+                        "1734189984621925574",
+                        "{\"body\":\"HHH000026: Second-level cache disabled\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.hibernate.cache.internal.RegionFactoryInitiator\"}}"
+                    ],
+                    [
+                        "1734189984399884817",
+                        "{\"body\":\"HHH000412: Hibernate ORM core version 6.5.3.Final\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.hibernate.Version\"}}"
+                    ],
+                    [
+                        "1734189983966816269",
+                        "{\"body\":\"HHH000204: Processing PersistenceUnitInfo [name: default]\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.hibernate.jpa.internal.util.LogHelper\"}}"
+                    ],
+                    [
+                        "1734189982904345792",
+                        "{\"body\":\"Root WebApplicationContext: initialization completed in 11555 ms\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext\"}}"
+                    ],
+                    [
+                        "1734189982900000000",
+                        "{\"body\":\"Initializing Spring embedded WebApplicationContext\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]\"}}"
+                    ],
+                    [
+                        "1734189982705000000",
+                        "{\"body\":\"Starting Servlet engine: [Apache Tomcat/10.1.31]\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.apache.catalina.core.StandardEngine\"}}"
+                    ],
+                    [
+                        "1734189982698000000",
+                        "{\"body\":\"Starting service [Tomcat]\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.apache.catalina.core.StandardService\"}}"
+                    ],
+                    [
+                        "1734189982559252324",
+                        "{\"body\":\"Tomcat initialized with port 8080 (http)\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.boot.web.embedded.tomcat.TomcatWebServer\"}}"
+                    ],
+                    [
+                        "1734189978839498084",
+                        "{\"body\":\"Finished Spring Data repository scanning in 278 ms. Found 2 JPA repository interfaces.\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.data.repository.config.RepositoryConfigurationDelegate\"}}"
+                    ],
+                    [
+                        "1734189978480698561",
+                        "{\"body\":\"Bootstrapping Spring Data JPA repositories in DEFAULT mode.\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"org.springframework.data.repository.config.RepositoryConfigurationDelegate\"}}"
+                    ],
+                    [
+                        "1734189971079718404",
+                        "{\"body\":\"No active profile set, falling back to 1 default profile: \\\"default\\\"\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"MicroUser.UserSpringBoot.UserSpringBootApplication\"}}"
+                    ],
+                    [
+                        "1734189971009009592",
+                        "{\"body\":\"Starting UserSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)\",\"severity\":\"INFO\",\"resources\":{\"container.id\":\"78fc7c70854e855d699d5cf1af732d18bd1540d91d3dd7bb494fd2df3d539a97\",\"host.arch\":\"amd64\",\"host.name\":\"78fc7c70854e\",\"os.description\":\"Linux 5.15.133.1-microsoft-standard-WSL2\",\"os.type\":\"linux\",\"process.command_args\":[\"/opt/java/openjdk/bin/java\",\"-javaagent:/otel-agent.jar\",\"-Dotel.javaagent.configuration-file=/app/otel.properties\",\"-jar\",\"app.jar\"],\"process.executable.path\":\"/opt/java/openjdk/bin/java\",\"process.pid\":1,\"process.runtime.description\":\"Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.13+11\",\"process.runtime.name\":\"OpenJDK Runtime Environment\",\"process.runtime.version\":\"17.0.13+11\",\"service.instance.id\":\"0aa4e005-337d-4e92-9944-e94ae6eb9182\",\"service.name\":\"UserSpringBoot\",\"service.namespace\":\"MicroUser\",\"service.version\":\"1.0.0\",\"telemetry.distro.name\":\"opentelemetry-java-instrumentation\",\"telemetry.distro.version\":\"2.10.0\",\"telemetry.sdk.language\":\"java\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.1\"},\"instrumentation_scope\":{\"name\":\"MicroUser.UserSpringBoot.UserSpringBootApplication\"}}"
+                    ]
+                ]
+            }
+        ],
+        "stats": {
+            "summary": {
+                "bytesProcessedPerSecond": 2247583,
+                "linesProcessedPerSecond": 1867,
+                "totalBytesProcessed": 62571,
+                "totalLinesProcessed": 52,
+                "execTime": 0.027839,
+                "queueTime": 0.000159,
+                "subqueries": 0,
+                "totalEntriesReturned": 52,
+                "splits": 2,
+                "shards": 0,
+                "totalPostFilterLines": 52,
+                "totalStructuredMetadataBytesProcessed": 988
+            },
+            "querier": {
+                "store": {
+                    "totalChunksRef": 0,
+                    "totalChunksDownloaded": 0,
+                    "chunksDownloadTime": 0,
+                    "queryReferencedStructuredMetadata": false,
+                    "chunk": {
+                        "headChunkBytes": 0,
+                        "headChunkLines": 0,
+                        "decompressedBytes": 0,
+                        "decompressedLines": 0,
+                        "compressedBytes": 0,
+                        "totalDuplicates": 0,
+                        "postFilterLines": 0,
+                        "headChunkStructuredMetadataBytes": 0,
+                        "decompressedStructuredMetadataBytes": 0
+                    },
+                    "chunkRefsFetchTime": 0,
+                    "congestionControlLatency": 0,
+                    "pipelineWrapperFilteredLines": 0
+                }
+            },
+            "ingester": {
+                "totalReached": 2,
+                "totalChunksMatched": 1,
+                "totalBatches": 3,
+                "totalLinesSent": 52,
+                "store": {
+                    "totalChunksRef": 3,
+                    "totalChunksDownloaded": 3,
+                    "chunksDownloadTime": 7395960,
+                    "queryReferencedStructuredMetadata": false,
+                    "chunk": {
+                        "headChunkBytes": 30988,
+                        "headChunkLines": 26,
+                        "decompressedBytes": 31583,
+                        "decompressedLines": 26,
+                        "compressedBytes": 3718,
+                        "totalDuplicates": 0,
+                        "postFilterLines": 52,
+                        "headChunkStructuredMetadataBytes": 208,
+                        "decompressedStructuredMetadataBytes": 780
+                    },
+                    "chunkRefsFetchTime": 529061,
+                    "congestionControlLatency": 0,
+                    "pipelineWrapperFilteredLines": 0
+                }
+            },
+            "cache": {
+                "chunk": {
+                    "entriesFound": 0,
+                    "entriesRequested": 0,
+                    "entriesStored": 0,
+                    "bytesReceived": 0,
+                    "bytesSent": 0,
+                    "requests": 0,
+                    "downloadTime": 0,
+                    "queryLengthServed": 0
+                },
+                "index": {
+                    "entriesFound": 0,
+                    "entriesRequested": 0,
+                    "entriesStored": 0,
+                    "bytesReceived": 0,
+                    "bytesSent": 0,
+                    "requests": 0,
+                    "downloadTime": 0,
+                    "queryLengthServed": 0
+                },
+                "result": {
+                    "entriesFound": 0,
+                    "entriesRequested": 0,
+                    "entriesStored": 0,
+                    "bytesReceived": 0,
+                    "bytesSent": 0,
+                    "requests": 0,
+                    "downloadTime": 0,
+                    "queryLengthServed": 0
+                },
+                "statsResult": {
+                    "entriesFound": 0,
+                    "entriesRequested": 1,
+                    "entriesStored": 1,
+                    "bytesReceived": 0,
+                    "bytesSent": 0,
+                    "requests": 2,
+                    "downloadTime": 5201,
+                    "queryLengthServed": 0
+                },
+                "volumeResult": {
+                    "entriesFound": 0,
+                    "entriesRequested": 0,
+                    "entriesStored": 0,
+                    "bytesReceived": 0,
+                    "bytesSent": 0,
+                    "requests": 0,
+                    "downloadTime": 0,
+                    "queryLengthServed": 0
+                },
+                "seriesResult": {
+                    "entriesFound": 0,
+                    "entriesRequested": 0,
+                    "entriesStored": 0,
+                    "bytesReceived": 0,
+                    "bytesSent": 0,
+                    "requests": 0,
+                    "downloadTime": 0,
+                    "queryLengthServed": 0
+                },
+                "labelResult": {
+                    "entriesFound": 0,
+                    "entriesRequested": 0,
+                    "entriesStored": 0,
+                    "bytesReceived": 0,
+                    "bytesSent": 0,
+                    "requests": 0,
+                    "downloadTime": 0,
+                    "queryLengthServed": 0
+                },
+                "instantMetricResult": {
+                    "entriesFound": 0,
+                    "entriesRequested": 0,
+                    "entriesStored": 0,
+                    "bytesReceived": 0,
+                    "bytesSent": 0,
+                    "requests": 0,
+                    "downloadTime": 0,
+                    "queryLengthServed": 0
+                }
+            },
+            "index": {
+                "totalChunks": 0,
+                "postFilterChunks": 0,
+                "shardsDuration": 0
+            }
+        }
+    }
+}

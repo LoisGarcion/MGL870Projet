@@ -1,6 +1,7 @@
 services:
   dbuser:
     image: postgres
+    command: [ "postgres", "-c", "config_file=/etc/postgresql/postgresql.conf" ]
     container_name: user_postgres
     restart: always
     environment:
@@ -8,17 +9,10 @@ services:
       POSTGRES_USER: "dbuser"
       POSTGRES_PASSWORD: "dbuserpassword"
     volumes:
-      - ./PostgresUser/test:/var/lib/postgresql/data
-      - ./PostgresProduct/config:/etc/postgresql/conf.d
+      - ./postgres/userConf/postgresql.conf:/etc/postgresql/postgresql.conf
+      - ./postgres/userLog:/var/log/postgresql
     ports:
       - "5432:5432"
-    logging:
-      driver: loki
-      options:
-        loki-url: "http://loki:3100/loki/api/v1/push"
-        loki-batch-size: "400"
-        loki-batch-wait: "1s"
-        loki-external-labels: "container_name=user_postgres"
 
   user-app:
     build:
@@ -35,16 +29,10 @@ services:
       - "8080:8080"
     depends_on:
       - dbuser
-    logging:
-      driver: loki
-      options:
-        loki-url: "http://loki:3100/loki/api/v1/push"
-        loki-batch-size: "400"
-        loki-batch-wait: "1s"
-        loki-external-labels: "container_name=user-app"
 
   dbproduct:
     image: postgres
+    command: [ "postgres", "-c", "config_file=/etc/postgresql/postgresql.conf" ]
     container_name: product_postgres
     restart: always
     environment:
@@ -52,19 +40,12 @@ services:
       POSTGRES_USER: "dbproduct"
       POSTGRES_PASSWORD: "dbproductpassword"
     volumes:
-      - ./PostgresProduct/test:/var/lib/postgresql/data
-      - ./PostgresProduct/config:/etc/postgresql/conf.d
+      - ./postgres/productConf/postgresql.conf:/etc/postgresql/postgresql.conf
+      - ./postgres/productLog:/var/log/postgresql
     ports:
       - "5433:5432"
     depends_on:
       - dbuser
-    logging:
-      driver: loki
-      options:
-        loki-url: "http://loki:3100/loki/api/v1/push"
-        loki-batch-size: "400"
-        loki-batch-wait: "1s"
-        loki-external-labels: "container_name=product_postgres"
 
   product-app:
     build:
@@ -81,13 +62,6 @@ services:
       - "8081:8080"
     depends_on:
       - dbproduct
-    logging:
-      driver: loki
-      options:
-        loki-url: "http://loki:3100/loki/api/v1/push"
-        loki-batch-size: "400"
-        loki-batch-wait: "1s"
-        loki-external-labels: "container_name=product-app"
 
   otel-collector:
     image: otel/opentelemetry-collector-contrib:0.82.0
@@ -100,6 +74,8 @@ services:
       - ./Collector/otel-collector.log:/etc/otelcol-contrib/otel-collector.log
       - ./Collector/otel-collector.traces:/etc/otelcol-contrib/otel-collector.traces
       - ./Collector/otel-collector.metrics:/etc/otelcol-contrib/otel-collector.metrics
+      - ./postgres/productLog/productlogs:/var/log/postgresql/productlogs
+      - ./postgres/userLog/userlogs:/var/log/postgresql/userlogs
     ports:
       - "1888:1888" # pprof extension
       - "8888:8888" # Prometheus metrics exposed by the Collector

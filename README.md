@@ -17,7 +17,5 @@ Cadvisor pour les metriques des containers docker.
 Faire exporter des deux db avec dashboards~~~~ grafana
 
 
-docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions
-
 docker compose down -v
 docker compose up --build -d

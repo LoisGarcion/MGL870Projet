@@ -4,23 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44894a78-3de7-467d-b599-d092983923e0" name="Changes" comment="beaucoup de modifs, fichier python pour recup les timestamp et body. Protocole de test K6 avec séparation en block, ...">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroProduct/ProductSpringBoot/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroProduct/ProductSpringBoot/src/main/java/com/example/ProductSpringBoot/Controller/ExceptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroProduct/ProductSpringBoot/src/main/java/com/example/ProductSpringBoot/Controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroProduct/ProductSpringBoot/src/main/java/com/example/ProductSpringBoot/Model/ProductModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroProduct/ProductSpringBoot/src/main/java/com/example/ProductSpringBoot/Repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroProduct/ProductSpringBoot/src/main/java/com/example/ProductSpringBoot/Service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Dto/BuyRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/ResponseModel/ProductResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostgresProduct/config/postgresql.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PostgresUser/config/postgresql.conf" afterDir="false" />
+    <list default="true" id="44894a78-3de7-467d-b599-d092983923e0" name="Changes" comment="ptit probleme avec docker, a tester après, pas oublier de regarder le readme">
+      <change afterPath="$PROJECT_DIR$/Python/getLogs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python/logs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python/lokilogs.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres/productConf/postgresql.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres/productLog/productlogs/postgresqlproduct.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres/userConf/postgresql.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres/userLog/userlogs/postgresqluser.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Collector/otel-collector.log" beforeDir="false" afterPath="$PROJECT_DIR$/Collector/otel-collector.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Model/UserModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/MicroUser/UserSpringBoot/src/main/java/MicroUser/UserSpringBoot/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collector/otel-collector.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Collector/otel-collector.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostgresProduct/config/postgresql.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PostgresUser/config/postgresql.conf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
@@ -61,30 +57,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.process.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/loisb/IdeaProjects/MGL870Projet/MicroProduct/ProductSpringBoot/src/main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.process.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/loisb/IdeaProjects/MGL870Projet/postgres/productConf",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\loisb\IdeaProjects\MGL870Projet\postgres\productConf" />
+      <recent name="C:\Users\loisb\IdeaProjects\MGL870Projet\postgres\userLog" />
       <recent name="C:\Users\loisb\IdeaProjects\MGL870Projet\MicroProduct\ProductSpringBoot\src\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\loisb\IdeaProjects\MGL870Projet\postgres\userConf" />
+      <recent name="C:\Users\loisb\IdeaProjects\MGL870Projet\postgres\userLog" />
+      <recent name="C:\Users\loisb\IdeaProjects\MGL870Projet\postgres\productLog" />
     </key>
   </component>
   <component name="RunManager">
@@ -127,6 +130,9 @@
       <workItem from="1734061883057" duration="413000" />
       <workItem from="1734062351375" duration="6776000" />
       <workItem from="1734094935822" duration="4705000" />
+      <workItem from="1734101322189" duration="293000" />
+      <workItem from="1734105898569" duration="4650000" />
+      <workItem from="1734172640802" duration="8777000" />
     </task>
     <task id="LOCAL-00001" summary="Beaucoup d'avance, ajout du javaagent pour générer automatiquement les metriques / traces / logs de java spring boot. Ajout de loki, prometheus et jaeger. Ajout de grafana">
       <option name="closed" value="true" />
@@ -160,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732248625703</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ptit probleme avec docker, a tester après, pas oublier de regarder le readme">
+      <option name="closed" value="true" />
+      <created>1734101621125</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734101621125</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +184,8 @@
     <MESSAGE value="Beaucoup d'avance, ajout du javaagent pour générer automatiquement les metriques / traces / logs de java spring boot. Ajout de loki, prometheus et jaeger. Ajout de grafana" />
     <MESSAGE value="J'arrive a recup mes logs grâce au otel collector, maintenant faudra isoler tout ca" />
     <MESSAGE value="beaucoup de modifs, fichier python pour recup les timestamp et body. Protocole de test K6 avec séparation en block, ..." />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="ptit probleme avec docker, a tester après, pas oublier de regarder le readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="ptit probleme avec docker, a tester après, pas oublier de regarder le readme" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MGL870Projet$process.coverage" NAME="process Coverage Results" MODIFIED="1732237910283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python" />
