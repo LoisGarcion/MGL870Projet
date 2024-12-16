@@ -5,19 +5,20 @@ import time
 
 from pandas.io.common import file_exists
 
-LOKI_URL = "http://localhost:54667/loki/api/v1/query_range"
+LOKI_URL = "http://localhost:3100/loki/api/v1/query_range"
 QUERY = '{exporter="OTLP"}'
 
 def fetch_logs():
     # Calculate the time range for the last 1 minute
     current_time_ns = int(time.time() * 1e9)  # Current time in nanoseconds
-    one_minute_ago_ns = current_time_ns - int(6000 * 1e9)  # One minute ago in nanoseconds
+    one_minute_ago_ns = current_time_ns - int(600000 * 1e9)  # One minute ago in nanoseconds
 
     # Update the query to include the time range
     params = {
         'query': QUERY,
         'start': one_minute_ago_ns,
-        'end': current_time_ns
+        'end': current_time_ns,
+        'limit': 3000
     }
 
     response = requests.get(LOKI_URL, params=params)
@@ -60,8 +61,11 @@ def extract_body_to_csv(input_file, output_file):
         writer = csv.writer(csvfile)
         writer.writerows(bodies)
 
-IS_ANOMALY = 1
+IS_ANOMALY = 0
 
 # Example usage
 fetch_logs()
-extract_body_to_csv("logs.json", "bodies")
+if(IS_ANOMALY == 1):
+    extract_body_to_csv("logs.json", "bodiesA")
+else:
+    extract_body_to_csv("logs.json", "bodies")

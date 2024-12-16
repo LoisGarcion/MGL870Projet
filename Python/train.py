@@ -23,13 +23,13 @@ def process_data(file_path, model_name_suffix=""):
     test_df = df.iloc[train_size + val_size:]
 
     # Separate features and labels
-    X_train = train_df.drop(columns=['Timestamp', 'Label'])  # Features
+    X_train = train_df.drop(columns=['File', 'Label'])  # Features
     y_train = train_df['Label'].astype(int)  # Labels
 
-    X_val = val_df.drop(columns=['Timestamp', 'Label'])
+    X_val = val_df.drop(columns=['File', 'Label'])
     y_val = val_df['Label'].astype(int)
 
-    X_test = test_df.drop(columns=['Timestamp', 'Label'])
+    X_test = test_df.drop(columns=['File', 'Label'])
     y_test = test_df['Label'].astype(int)
 
     # Feature names for later use
@@ -45,6 +45,11 @@ def process_data(file_path, model_name_suffix=""):
     rf_model = RandomForestClassifier(class_weight='balanced', random_state=42)
     rf_model.fit(X_train, y_train)
     rf_pred = rf_model.predict_proba(X_test)[:, 1]
+
+    # logistic regression model
+    lr_model = LogisticRegression(random_state=42)
+    lr_model.fit(X_train, y_train)
+    lr_pred = lr_model.predict_proba(X_test)[:, 1]
 
     # Evaluate model
     def evaluate_model(y_true, y_pred, model_name, threshold):
@@ -62,6 +67,7 @@ def process_data(file_path, model_name_suffix=""):
         print('-' * 30)
 
     evaluate_model(y_test, rf_pred, f"Random Forest {model_name_suffix}", threshold=0.5)
+    evaluate_model(y_test, lr_pred, f"Logistic Regression {model_name_suffix}", threshold=0.5)
 
     # Feature importance
     feature_importances = rf_model.feature_importances_
@@ -86,4 +92,4 @@ def process_data(file_path, model_name_suffix=""):
     plt.show()
 
 # Process the data and output feature importances
-process_data('output.csv', model_name_suffix="Error Detection")
+process_data('event_matrix.csv', model_name_suffix="Error Detection")

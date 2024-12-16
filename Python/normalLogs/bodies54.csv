@@ -1,0 +1,91 @@
+"2024-12-16 11:22:20.796 GMT [71] NOTICE:  table ""product_model"" does not exist, skipping"
+"2024-12-16 11:22:19.570 GMT [71] NOTICE:  table ""user_model"" does not exist, skipping"
+"2024-12-16 11:22:19.563 GMT [71] NOTICE:  table ""k6model"" does not exist, skipping"
+2024-12-16 11:22:04.058 GMT [1] LOG:  database system is ready to accept connections
+2024-12-16 11:22:04.040 GMT [66] LOG:  database system was shut down at 2024-12-16 11:22:03 GMT
+"2024-12-16 11:22:04.018 GMT [1] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 11:22:03.957 GMT [1] LOG:  listening on IPv6 address ""::"", port 5432"
+"2024-12-16 11:22:03.957 GMT [1] LOG:  listening on IPv4 address ""0.0.0.0"", port 5432"
+"2024-12-16 11:22:03.956 GMT [1] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 11:22:03.870 GMT [48] LOG:  database system is shut down
+"2024-12-16 11:22:03.858 GMT [50] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.187 s, sync=1.268 s, total=1.558 s; sync files=301, longest=0.080 s, average=0.005 s; distance=4238 kB, estimate=4238 kB; lsn=0/1908978, redo lsn=0/1908978"
+2024-12-16 11:22:02.246 GMT [1] LOG:  database system is ready to accept connections
+2024-12-16 11:22:02.222 GMT [66] LOG:  database system was shut down at 2024-12-16 11:22:01 GMT
+"2024-12-16 11:22:02.193 GMT [1] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+2024-12-16 11:22:02.320 GMT [50] LOG:  checkpoint starting: shutdown immediate
+2024-12-16 11:22:02.301 GMT [50] LOG:  shutting down
+"2024-12-16 11:22:02.294 GMT [48] LOG:  background worker ""logical replication launcher"" (PID 55) exited with exit code 1"
+2024-12-16 11:22:02.287 GMT [48] LOG:  aborting any active transactions
+2024-12-16 11:22:02.271 GMT [48] LOG:  received fast shutdown request
+"2024-12-16 11:22:02.163 GMT [1] LOG:  listening on IPv6 address ""::"", port 5432"
+"2024-12-16 11:22:02.163 GMT [1] LOG:  listening on IPv4 address ""0.0.0.0"", port 5432"
+"2024-12-16 11:22:02.162 GMT [1] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 11:22:02.003 GMT [48] LOG:  database system is shut down
+"2024-12-16 11:22:01.990 GMT [50] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.058 s, sync=0.726 s, total=0.882 s; sync files=301, longest=0.064 s, average=0.003 s; distance=4238 kB, estimate=4238 kB; lsn=0/1908970, redo lsn=0/1908970"
+2024-12-16 11:22:01.859 GMT [48] LOG:  database system is ready to accept connections
+2024-12-16 11:22:01.835 GMT [52] LOG:  database system was shut down at 2024-12-16 11:21:59 GMT
+"2024-12-16 11:22:01.795 GMT [48] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 11:22:01.786 GMT [48] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 11:22:01.121 GMT [50] LOG:  checkpoint starting: shutdown immediate
+2024-12-16 11:22:01.108 GMT [50] LOG:  shutting down
+"2024-12-16 11:22:01.107 GMT [48] LOG:  background worker ""logical replication launcher"" (PID 55) exited with exit code 1"
+2024-12-16 11:22:01.104 GMT [48] LOG:  aborting any active transactions
+2024-12-16 11:22:01.081 GMT [48] LOG:  received fast shutdown request
+2024-12-16 11:22:00.635 GMT [48] LOG:  database system is ready to accept connections
+2024-12-16 11:22:00.617 GMT [52] LOG:  database system was shut down at 2024-12-16 11:21:59 GMT
+"2024-12-16 11:22:00.581 GMT [48] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 11:22:00.573 GMT [48] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"
+"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"
+"table ""user_model"" does not exist, skipping"
+"SQL Warning Code: 0, SQLState: 00000"
+"table ""k6model"" does not exist, skipping"
+"SQL Warning Code: 0, SQLState: 00000"
+Started ProductSpringBootApplication in 14.434 seconds (process running for 22.546)
+Tomcat started on port 8080 (http) with context path '/'
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+"HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown"
+HikariPool-1 - Start completed.
+HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6a0ca728
+HikariPool-1 - Starting...
+No LoadTimeWeaver setup: ignoring JPA class transformer
+HHH000026: Second-level cache disabled
+HHH000412: Hibernate ORM core version 6.6.2.Final
+HHH000204: Processing PersistenceUnitInfo [name: default]
+Root WebApplicationContext: initialization completed in 4757 ms
+Initializing Spring embedded WebApplicationContext
+Starting Servlet engine: [Apache Tomcat/10.1.33]
+Starting service [Tomcat]
+Tomcat initialized with port 8080 (http)
+Finished Spring Data repository scanning in 164 ms. Found 1 JPA repository interface.
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"No active profile set, falling back to 1 default profile: ""default"""
+Starting ProductSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+Started UserSpringBootApplication in 14.354 seconds (process running for 22.379)
+Tomcat started on port 8080 (http) with context path '/'
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+HikariPool-1 - Start completed.
+HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48860fb8
+HikariPool-1 - Starting...
+No LoadTimeWeaver setup: ignoring JPA class transformer
+HHH000026: Second-level cache disabled
+HHH000412: Hibernate ORM core version 6.5.3.Final
+HHH000204: Processing PersistenceUnitInfo [name: default]
+Root WebApplicationContext: initialization completed in 4739 ms
+Initializing Spring embedded WebApplicationContext
+Starting Servlet engine: [Apache Tomcat/10.1.31]
+Starting service [Tomcat]
+Tomcat initialized with port 8080 (http)
+Finished Spring Data repository scanning in 175 ms. Found 2 JPA repository interfaces.
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"No active profile set, falling back to 1 default profile: ""default"""
+Starting UserSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)

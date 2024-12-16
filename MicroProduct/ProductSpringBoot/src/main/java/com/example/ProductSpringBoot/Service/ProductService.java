@@ -18,8 +18,10 @@ public class ProductService {
     private ProductRepository productRepository;
 
     public ProductModel saveProduct(ProductModel product) {
-        log.info("Saving product");
-        return productRepository.save(product);
+        log.info("Saving product Name : {}", product.getProductName());
+        ProductModel p = productRepository.save(product);
+        log.info("Product ID : {} saved", p.getId());
+        return p;
     }
 
     public List<ProductModel> getAllProduct() {
@@ -28,7 +30,13 @@ public class ProductService {
     }
 
     public ProductModel getProductById(Long id) {
-        log.info("Getting product by id");
-        return productRepository.findById(id).orElse(null);
+        log.info("Getting product by id ID : {}", id);
+        ProductModel p = productRepository.findById(id).orElse(null);
+        if (p != null) {
+            log.info("Product found ID : {}", p.getId());
+        } else {
+            log.warn("Product not found");
+        }
+        return p;
     }
 }

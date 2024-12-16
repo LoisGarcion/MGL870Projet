@@ -1,0 +1,136 @@
+"2024-12-16 11:11:17.239 GMT [71] NOTICE:  table ""product_model"" does not exist, skipping"
+"2024-12-16 11:11:15.947 GMT [72] NOTICE:  table ""user_model"" does not exist, skipping"
+"2024-12-16 11:11:15.941 GMT [72] NOTICE:  table ""k6model"" does not exist, skipping"
+2024-12-16 11:10:59.919 GMT [1] LOG:  database system is ready to accept connections
+2024-12-16 11:10:59.892 GMT [66] LOG:  database system was shut down at 2024-12-16 11:10:59 GMT
+"2024-12-16 11:10:59.866 GMT [1] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 11:10:59.835 GMT [1] LOG:  listening on IPv6 address ""::"", port 5432"
+"2024-12-16 11:10:59.835 GMT [1] LOG:  listening on IPv4 address ""0.0.0.0"", port 5432"
+"2024-12-16 11:10:59.834 GMT [1] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 11:10:59.660 GMT [48] LOG:  database system is shut down
+"2024-12-16 11:10:59.645 GMT [50] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.099 s, sync=0.440 s, total=0.595 s; sync files=301, longest=0.013 s, average=0.002 s; distance=4238 kB, estimate=4238 kB; lsn=0/1908978, redo lsn=0/1908978"
+2024-12-16 11:10:59.060 GMT [50] LOG:  checkpoint starting: shutdown immediate
+2024-12-16 11:10:59.051 GMT [50] LOG:  shutting down
+"2024-12-16 11:10:59.050 GMT [48] LOG:  background worker ""logical replication launcher"" (PID 55) exited with exit code 1"
+2024-12-16 11:10:59.047 GMT [48] LOG:  aborting any active transactions
+2024-12-16 11:10:59.033 GMT [48] LOG:  received fast shutdown request
+2024-12-16 11:10:58.691 GMT [48] LOG:  database system is ready to accept connections
+2024-12-16 11:10:58.661 GMT [1] LOG:  database system is ready to accept connections
+2024-12-16 11:10:58.668 GMT [52] LOG:  database system was shut down at 2024-12-16 11:10:55 GMT
+"2024-12-16 11:10:58.618 GMT [48] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 11:10:58.595 GMT [48] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 11:10:58.640 GMT [67] LOG:  database system was shut down at 2024-12-16 11:10:58 GMT
+"2024-12-16 11:10:58.608 GMT [1] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 11:10:58.575 GMT [1] LOG:  listening on IPv6 address ""::"", port 5432"
+"2024-12-16 11:10:58.575 GMT [1] LOG:  listening on IPv4 address ""0.0.0.0"", port 5432"
+"2024-12-16 11:10:58.574 GMT [1] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 11:10:58.448 GMT [49] LOG:  database system is shut down
+"2024-12-16 11:10:58.435 GMT [51] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.134 s, sync=0.960 s, total=1.208 s; sync files=301, longest=0.028 s, average=0.004 s; distance=4238 kB, estimate=4238 kB; lsn=0/1908970, redo lsn=0/1908970"
+2024-12-16 11:10:57.246 GMT [51] LOG:  checkpoint starting: shutdown immediate
+2024-12-16 11:10:57.227 GMT [51] LOG:  shutting down
+"2024-12-16 11:10:57.227 GMT [49] LOG:  background worker ""logical replication launcher"" (PID 56) exited with exit code 1"
+2024-12-16 11:10:57.222 GMT [49] LOG:  aborting any active transactions
+2024-12-16 11:10:57.198 GMT [49] LOG:  received fast shutdown request
+2024-12-16 11:10:56.742 GMT [49] LOG:  database system is ready to accept connections
+2024-12-16 11:10:56.716 GMT [53] LOG:  database system was shut down at 2024-12-16 11:10:53 GMT
+"2024-12-16 11:10:56.674 GMT [49] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 11:10:56.661 GMT [49] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 11:10:35.715 GMT [1] LOG:  database system is shut down
+"2024-12-16 11:10:35.712 GMT [65] LOG:  checkpoint complete: wrote 97 buffers (0.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.015 s, sync=0.025 s, total=0.069 s; sync files=53, longest=0.006 s, average=0.001 s; distance=442 kB, estimate=442 kB; lsn=0/19772F8, redo lsn=0/19772F8"
+2024-12-16 11:10:35.649 GMT [65] LOG:  checkpoint starting: shutdown immediate
+2024-12-16 11:10:35.643 GMT [65] LOG:  shutting down
+"2024-12-16 11:10:35.643 GMT [1] LOG:  background worker ""logical replication launcher"" (PID 70) exited with exit code 1"
+2024-12-16 11:10:35.641 GMT [1] LOG:  aborting any active transactions
+2024-12-16 11:10:35.634 GMT [1] LOG:  received fast shutdown request
+"2024-12-16 11:08:15.770 GMT [72] NOTICE:  table ""user_model"" does not exist, skipping"
+"2024-12-16 11:08:15.765 GMT [72] NOTICE:  table ""k6model"" does not exist, skipping"
+2024-12-16 11:07:59.599 GMT [1] LOG:  database system is ready to accept connections
+2024-12-16 11:07:59.581 GMT [67] LOG:  database system was shut down at 2024-12-16 11:07:59 GMT
+"2024-12-16 11:07:59.550 GMT [1] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 11:07:59.521 GMT [1] LOG:  listening on IPv6 address ""::"", port 5432"
+"2024-12-16 11:07:59.521 GMT [1] LOG:  listening on IPv4 address ""0.0.0.0"", port 5432"
+"2024-12-16 11:07:59.520 GMT [1] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 11:07:59.353 GMT [49] LOG:  database system is shut down
+"2024-12-16 11:07:59.342 GMT [51] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.125 s, sync=1.667 s, total=1.901 s; sync files=301, longest=0.075 s, average=0.006 s; distance=4238 kB, estimate=4238 kB; lsn=0/1908970, redo lsn=0/1908970"
+2024-12-16 11:07:57.455 GMT [51] LOG:  checkpoint starting: shutdown immediate
+2024-12-16 11:07:57.442 GMT [51] LOG:  shutting down
+"2024-12-16 11:07:57.438 GMT [49] LOG:  background worker ""logical replication launcher"" (PID 56) exited with exit code 1"
+2024-12-16 11:07:57.434 GMT [49] LOG:  aborting any active transactions
+2024-12-16 11:07:57.411 GMT [49] LOG:  received fast shutdown request
+2024-12-16 11:07:56.964 GMT [49] LOG:  database system is ready to accept connections
+2024-12-16 11:07:56.936 GMT [53] LOG:  database system was shut down at 2024-12-16 11:07:54 GMT
+"2024-12-16 11:07:56.860 GMT [49] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+2024-12-16 11:10:35.033 GMT [1] LOG:  database system is shut down
+"2024-12-16 11:10:35.030 GMT [64] LOG:  checkpoint complete: wrote 90 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.020 s, sync=0.029 s, total=0.082 s; sync files=49, longest=0.012 s, average=0.001 s; distance=408 kB, estimate=408 kB; lsn=0/196EAD0, redo lsn=0/196EAD0"
+2024-12-16 11:10:34.955 GMT [64] LOG:  checkpoint starting: shutdown immediate
+2024-12-16 11:10:34.949 GMT [64] LOG:  shutting down
+"2024-12-16 11:10:34.949 GMT [1] LOG:  background worker ""logical replication launcher"" (PID 69) exited with exit code 1"
+2024-12-16 11:10:34.947 GMT [1] LOG:  aborting any active transactions
+2024-12-16 11:10:34.939 GMT [1] LOG:  received fast shutdown request
+"2024-12-16 11:08:18.288 GMT [70] NOTICE:  table ""product_model"" does not exist, skipping"
+2024-12-16 11:08:00.957 GMT [1] LOG:  database system is ready to accept connections
+2024-12-16 11:08:00.934 GMT [66] LOG:  database system was shut down at 2024-12-16 11:08:00 GMT
+"2024-12-16 11:08:00.905 GMT [1] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 11:08:00.889 GMT [1] LOG:  listening on IPv6 address ""::"", port 5432"
+"2024-12-16 11:08:00.889 GMT [1] LOG:  listening on IPv4 address ""0.0.0.0"", port 5432"
+"2024-12-16 11:08:00.888 GMT [1] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 11:08:00.793 GMT [48] LOG:  database system is shut down
+"2024-12-16 11:08:00.779 GMT [50] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.092 s, sync=0.473 s, total=0.651 s; sync files=301, longest=0.032 s, average=0.002 s; distance=4238 kB, estimate=4238 kB; lsn=0/1908978, redo lsn=0/1908978"
+2024-12-16 11:08:00.140 GMT [50] LOG:  checkpoint starting: shutdown immediate
+2024-12-16 11:08:00.129 GMT [50] LOG:  shutting down
+"2024-12-16 11:08:00.128 GMT [48] LOG:  background worker ""logical replication launcher"" (PID 55) exited with exit code 1"
+2024-12-16 11:08:00.121 GMT [48] LOG:  aborting any active transactions
+2024-12-16 11:08:00.112 GMT [48] LOG:  received fast shutdown request
+2024-12-16 11:07:59.711 GMT [48] LOG:  database system is ready to accept connections
+2024-12-16 11:07:59.682 GMT [52] LOG:  database system was shut down at 2024-12-16 11:07:55 GMT
+"2024-12-16 11:07:59.644 GMT [48] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 11:07:56.846 GMT [49] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+"2024-12-16 11:07:59.630 GMT [48] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+"table ""user_model"" does not exist, skipping"
+"SQL Warning Code: 0, SQLState: 00000"
+"table ""k6model"" does not exist, skipping"
+"SQL Warning Code: 0, SQLState: 00000"
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+"HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown"
+HikariPool-1 - Start completed.
+HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@743167c7
+HikariPool-1 - Starting...
+No LoadTimeWeaver setup: ignoring JPA class transformer
+HHH000026: Second-level cache disabled
+HHH000412: Hibernate ORM core version 6.6.2.Final
+HHH000204: Processing PersistenceUnitInfo [name: default]
+Root WebApplicationContext: initialization completed in 4583 ms
+Initializing Spring embedded WebApplicationContext
+Starting Servlet engine: [Apache Tomcat/10.1.33]
+Starting service [Tomcat]
+Tomcat initialized with port 8080 (http)
+Finished Spring Data repository scanning in 190 ms. Found 1 JPA repository interface.
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"No active profile set, falling back to 1 default profile: ""default"""
+Starting ProductSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+HikariPool-1 - Start completed.
+HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22b112bb
+HikariPool-1 - Starting...
+No LoadTimeWeaver setup: ignoring JPA class transformer
+HHH000026: Second-level cache disabled
+HHH000412: Hibernate ORM core version 6.5.3.Final
+HHH000204: Processing PersistenceUnitInfo [name: default]
+Root WebApplicationContext: initialization completed in 4710 ms
+Initializing Spring embedded WebApplicationContext
+Starting Servlet engine: [Apache Tomcat/10.1.31]
+Starting service [Tomcat]
+Tomcat initialized with port 8080 (http)
+Finished Spring Data repository scanning in 134 ms. Found 2 JPA repository interfaces.
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"No active profile set, falling back to 1 default profile: ""default"""
+Starting UserSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)

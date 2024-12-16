@@ -1,0 +1,467 @@
+2024-12-15 16:33:51.925 GMT [79] FATAL:  terminating connection due to unexpected postmaster exit
+2024-12-15 16:33:51.923 GMT [77] FATAL:  terminating connection due to unexpected postmaster exit
+2024-12-15 16:33:51.922 GMT [72] FATAL:  terminating connection due to unexpected postmaster exit
+2024-12-15 16:33:51.921 GMT [76] FATAL:  terminating connection due to unexpected postmaster exit
+2024-12-15 16:33:51.921 GMT [74] FATAL:  terminating connection due to unexpected postmaster exit
+2024-12-15 16:33:51.921 GMT [70] FATAL:  terminating connection due to unexpected postmaster exit
+2024-12-15 16:33:51.921 GMT [73] FATAL:  terminating connection due to unexpected postmaster exit
+2024-12-15 16:33:51.921 GMT [75] FATAL:  terminating connection due to unexpected postmaster exit
+2024-12-15 16:33:51.921 GMT [80] FATAL:  terminating connection due to unexpected postmaster exit
+2024-12-15 16:33:51.921 GMT [78] FATAL:  terminating connection due to unexpected postmaster exit
+"2024-12-15 16:33:39.325 GMT [71] NOTICE:  table ""product_model"" does not exist, skipping"
+"2024-12-15 16:33:38.919 GMT [71] NOTICE:  table ""user_model"" does not exist, skipping"
+"2024-12-15 16:33:38.913 GMT [71] NOTICE:  table ""k6model"" does not exist, skipping"
+2024-12-15 16:33:13.642 GMT [1] LOG:  database system is ready to accept connections
+2024-12-15 16:33:13.602 GMT [66] LOG:  database system was shut down at 2024-12-15 16:33:13 GMT
+"2024-12-15 16:33:13.546 GMT [1] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-15 16:33:13.495 GMT [1] LOG:  listening on IPv6 address ""::"", port 5432"
+"2024-12-15 16:33:13.495 GMT [1] LOG:  listening on IPv4 address ""0.0.0.0"", port 5432"
+"2024-12-15 16:33:13.495 GMT [1] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-15 16:33:13.313 GMT [48] LOG:  database system is shut down
+"2024-12-15 16:33:13.303 GMT [50] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.135 s, sync=0.648 s, total=0.873 s; sync files=301, longest=0.027 s, average=0.003 s; distance=4238 kB, estimate=4238 kB; lsn=0/1908978, redo lsn=0/1908978"
+2024-12-15 16:33:12.442 GMT [50] LOG:  checkpoint starting: shutdown immediate
+2024-12-15 16:33:12.430 GMT [50] LOG:  shutting down
+"2024-12-15 16:33:12.425 GMT [48] LOG:  background worker ""logical replication launcher"" (PID 55) exited with exit code 1"
+2024-12-15 16:33:12.421 GMT [48] LOG:  aborting any active transactions
+2024-12-15 16:33:12.408 GMT [48] LOG:  received fast shutdown request
+2024-12-15 16:33:12.012 GMT [48] LOG:  database system is ready to accept connections
+2024-12-15 16:33:11.995 GMT [52] LOG:  database system was shut down at 2024-12-15 16:33:07 GMT
+"2024-12-15 16:33:11.942 GMT [48] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-15 16:33:11.929 GMT [48] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-15 16:33:09.045 GMT [1] LOG:  database system is ready to accept connections
+2024-12-15 16:33:09.029 GMT [66] LOG:  database system was shut down at 2024-12-15 16:33:08 GMT
+"2024-12-15 16:33:08.994 GMT [1] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-15 16:33:08.971 GMT [1] LOG:  listening on IPv6 address ""::"", port 5432"
+"2024-12-15 16:33:08.971 GMT [1] LOG:  listening on IPv4 address ""0.0.0.0"", port 5432"
+"2024-12-15 16:33:08.970 GMT [1] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-15 16:33:08.838 GMT [48] LOG:  database system is shut down
+"2024-12-15 16:33:08.829 GMT [50] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.088 s, sync=0.921 s, total=1.114 s; sync files=301, longest=0.050 s, average=0.004 s; distance=4238 kB, estimate=4238 kB; lsn=0/1908970, redo lsn=0/1908970"
+2024-12-15 16:33:07.734 GMT [50] LOG:  checkpoint starting: shutdown immediate
+2024-12-15 16:33:07.715 GMT [50] LOG:  shutting down
+"2024-12-15 16:33:07.711 GMT [48] LOG:  background worker ""logical replication launcher"" (PID 55) exited with exit code 1"
+2024-12-15 16:33:07.706 GMT [48] LOG:  aborting any active transactions
+2024-12-15 16:33:07.692 GMT [48] LOG:  received fast shutdown request
+2024-12-15 16:33:07.160 GMT [48] LOG:  database system is ready to accept connections
+2024-12-15 16:33:07.123 GMT [52] LOG:  database system was shut down at 2024-12-15 16:33:05 GMT
+"2024-12-15 16:33:07.057 GMT [48] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-15 16:33:07.044 GMT [48] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+Product not found
+Product not found
+Product not found
+Product not found
+"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"
+"SQL Error: 0, SQLState: 08001"
+"SQL Error: 0, SQLState: 08001"
+"SQL Error: 0, SQLState: 08001"
+"SQL Error: 0, SQLState: 08001"
+"SQL Error: 0, SQLState: 08001"
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1d72e641 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6d3bc232 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@2aad5ad9 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6834b813 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@170ed1ae (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@3e69416b (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1878a2c5 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@21315e03 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5621dee7 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6a73f164 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+User not found
+User not found
+"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"
+"table ""user_model"" does not exist, skipping"
+"SQL Warning Code: 0, SQLState: 00000"
+"table ""k6model"" does not exist, skipping"
+"SQL Warning Code: 0, SQLState: 00000"
+Getting product by id ID : 0
+GET /api/product/get/0
+Product ID : 20 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Product found ID : 6
+Getting product by id ID : 6
+GET /api/product/get/6
+Getting product by id ID : 0
+GET /api/product/get/0
+Product found ID : 3
+Getting product by id ID : 3
+GET /api/product/get/3
+Product ID : 19 saved
+Product ID : 17 saved
+Product ID : 18 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Saving product Name : test-k62
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+POST /api/product/create Name : test-k62
+Product found ID : 7
+Getting product by id ID : 7
+GET /api/product/get/7
+Product ID : 16 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Product found ID : 5
+Getting product by id ID : 5
+GET /api/product/get/5
+Getting all users
+GET /api/product/all
+Product ID : 15 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Product found ID : 2
+Getting product by id ID : 2
+GET /api/product/get/2
+Product ID : 14 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Product found ID : 6
+Getting product by id ID : 6
+GET /api/product/get/6
+Product ID : 13 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Product found ID : 4
+Getting product by id ID : 4
+GET /api/product/get/4
+Product ID : 12 saved
+Getting all users
+GET /api/product/all
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Product found ID : 1
+Getting product by id ID : 1
+GET /api/product/get/1
+Product ID : 11 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Product found ID : 5
+Getting product by id ID : 5
+GET /api/product/get/5
+Product ID : 10 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Product found ID : 3
+Getting product by id ID : 3
+GET /api/product/get/3
+Product ID : 9 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Getting product by id ID : 0
+GET /api/product/get/0
+Product ID : 8 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Product found ID : 4
+Getting product by id ID : 4
+GET /api/product/get/4
+Product ID : 7 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Product found ID : 2
+Getting product by id ID : 2
+GET /api/product/get/2
+Product ID : 6 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Product found ID : 3
+Getting product by id ID : 3
+GET /api/product/get/3
+Product ID : 5 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Product found ID : 1
+Getting product by id ID : 1
+GET /api/product/get/1
+Product ID : 4 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Product found ID : 2
+Getting product by id ID : 2
+GET /api/product/get/2
+Product ID : 3 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Getting product by id ID : 0
+GET /api/product/get/0
+Product ID : 2 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Product found ID : 1
+Getting product by id ID : 1
+GET /api/product/get/1
+Product ID : 1 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Completed initialization in 1 ms
+Initializing Servlet 'dispatcherServlet'
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Started ProductSpringBootApplication in 26.167 seconds (process running for 35.126)
+Tomcat started on port 8080 (http) with context path '/'
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+"HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown"
+HikariPool-1 - Start completed.
+HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a35343e
+HikariPool-1 - Starting...
+No LoadTimeWeaver setup: ignoring JPA class transformer
+HHH000026: Second-level cache disabled
+HHH000412: Hibernate ORM core version 6.6.2.Final
+HHH000204: Processing PersistenceUnitInfo [name: default]
+Root WebApplicationContext: initialization completed in 7953 ms
+Initializing Spring embedded WebApplicationContext
+Starting Servlet engine: [Apache Tomcat/10.1.33]
+Starting service [Tomcat]
+Tomcat initialized with port 8080 (http)
+Finished Spring Data repository scanning in 303 ms. Found 1 JPA repository interface.
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"No active profile set, falling back to 1 default profile: ""default"""
+Starting ProductSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/0
+Buying product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+Http Response received
+Http Response received
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/0
+Http request to product-app http://product-app:8080/api/product/get/6
+Buying product ID : 6 User ID : 6
+Buying product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 6 User ID : 6
+POST /api/user/buy Product ID : 0 User ID : 0
+Http request to product-app http://product-app:8080/api/product/get/3
+Buying product ID : 3 User ID : 3
+POST /api/user/buy Product ID : 3 User ID : 3
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/7
+Buying product ID : 7 User ID : 7
+POST /api/user/buy Product ID : 7 User ID : 7
+Saving user
+POST /api/user/create Name : test-k6
+Saving user
+POST /api/user/create Name : test-k6
+Saving user
+POST /api/user/create Name : test-k6
+Saving user
+POST /api/user/create Name : test-k6
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/5
+Buying product ID : 5 User ID : 5
+POST /api/user/buy Product ID : 5 User ID : 5
+Getting all users
+GET /api/user/all
+User ID : 15 saved
+User found
+Http Response received
+Saving user
+POST /api/user/create Name : test-k6
+Http request to product-app http://product-app:8080/api/product/get/2
+Buying product ID : 2 User ID : 2
+POST /api/user/buy Product ID : 2 User ID : 2
+User ID : 14 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/6
+Buying product ID : 6 User ID : 6
+POST /api/user/buy Product ID : 6 User ID : 6
+User ID : 13 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/4
+Buying product ID : 4 User ID : 4
+POST /api/user/buy Product ID : 4 User ID : 4
+User ID : 12 saved
+Getting all users
+GET /api/user/all
+Saving user
+POST /api/user/create Name : test-k6
+User found
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/1
+Buying product ID : 1 User ID : 1
+POST /api/user/buy Product ID : 1 User ID : 1
+User ID : 11 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/5
+Buying product ID : 5 User ID : 5
+POST /api/user/buy Product ID : 5 User ID : 5
+User ID : 10 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/3
+Buying product ID : 3 User ID : 3
+POST /api/user/buy Product ID : 3 User ID : 3
+User ID : 9 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/0
+Buying product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+User ID : 8 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/4
+Buying product ID : 4 User ID : 4
+POST /api/user/buy Product ID : 4 User ID : 4
+User ID : 7 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/2
+Buying product ID : 2 User ID : 2
+POST /api/user/buy Product ID : 2 User ID : 2
+User ID : 6 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/3
+Buying product ID : 3 User ID : 3
+POST /api/user/buy Product ID : 3 User ID : 3
+User ID : 5 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/1
+Buying product ID : 1 User ID : 1
+POST /api/user/buy Product ID : 1 User ID : 1
+User ID : 4 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/2
+Buying product ID : 2 User ID : 2
+POST /api/user/buy Product ID : 2 User ID : 2
+User ID : 3 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/0
+Buying product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+User ID : 2 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/1
+Buying product ID : 1 User ID : 1
+POST /api/user/buy Product ID : 1 User ID : 1
+User ID : 1 saved
+Saving user
+POST /api/user/create Name : test-k6
+Completed initialization in 3 ms
+Initializing Servlet 'dispatcherServlet'
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Started UserSpringBootApplication in 26.98 seconds (process running for 35.827)
+Tomcat started on port 8080 (http) with context path '/'
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+HikariPool-1 - Start completed.
+HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6a73f164
+HikariPool-1 - Starting...
+No LoadTimeWeaver setup: ignoring JPA class transformer
+HHH000026: Second-level cache disabled
+HHH000412: Hibernate ORM core version 6.5.3.Final
+HHH000204: Processing PersistenceUnitInfo [name: default]
+Root WebApplicationContext: initialization completed in 7725 ms
+Initializing Spring embedded WebApplicationContext
+Starting Servlet engine: [Apache Tomcat/10.1.31]
+Starting service [Tomcat]
+Tomcat initialized with port 8080 (http)
+Finished Spring Data repository scanning in 247 ms. Found 2 JPA repository interfaces.
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"No active profile set, falling back to 1 default profile: ""default"""
+Starting UserSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction] with root cause
+The connection attempt failed.
+"HikariPool-1 - Connection is not available, request timed out after 30000ms (total=0, active=0, idle=0, waiting=4)"
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction] with root cause
+The connection attempt failed.
+"HikariPool-1 - Connection is not available, request timed out after 30000ms (total=0, active=0, idle=0, waiting=2)"
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction] with root cause
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction] with root cause
+The connection attempt failed.
+The connection attempt failed.
+"HikariPool-1 - Connection is not available, request timed out after 30000ms (total=0, active=0, idle=0, waiting=3)"
+"HikariPool-1 - Connection is not available, request timed out after 30000ms (total=0, active=0, idle=0, waiting=4)"
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction] with root cause
+The connection attempt failed.
+"HikariPool-1 - Connection is not available, request timed out after 30002ms (total=0, active=0, idle=0, waiting=4)"

@@ -7,10 +7,13 @@ receivers:
         endpoint: 0.0.0.0:4317
   filelog:
     include:
-      - /var/log/postgresql/userlogs/postgresqluser.log
-      - /var/log/postgresql/productlogs/postgresqlproduct.log
+      - /userlogs/postgresqluser.log
+      - /productlogs/postgresqlproduct.log
     start_at: beginning
-
+    operators:
+      - type: regex_parser
+        regex: '(?P<timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{3} GMT) \[(?P<process_id>\d+)\] (?P<log_level>[A-Za-z]+):\s(?P<message>.*)'
+        parse_from: body
 processors:
   batch:
 

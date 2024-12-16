@@ -1,0 +1,273 @@
+2024-12-16 10:16:29.151 GMT [1] LOG:  database system is ready to accept connections
+"2024-12-16 10:16:29.115 GMT [101] LOG:  checkpoint complete: wrote 91 buffers (0.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.012 s, sync=0.013 s, total=0.050 s; sync files=9, longest=0.006 s, average=0.002 s; distance=1571 kB, estimate=1571 kB; lsn=0/1ABF9F0, redo lsn=0/1ABF9F0"
+2024-12-16 10:16:29.071 GMT [101] LOG:  checkpoint starting: end-of-recovery immediate wait
+"2024-12-16 10:16:29.057 GMT [100] LOG:  redo done at 0/1ABF9C8 system usage: CPU: user: 0.01 s, system: 0.00 s, elapsed: 0.02 s"
+"2024-12-16 10:16:29.057 GMT [100] LOG:  invalid record length at 0/1ABF9F0: expected at least 24, got 0"
+2024-12-16 10:16:29.037 GMT [100] LOG:  redo starts at 0/1936DC8
+2024-12-16 10:16:29.032 GMT [107] FATAL:  the database system is in recovery mode
+2024-12-16 10:16:29.030 GMT [100] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-12-16 10:16:28.870 GMT [106] FATAL:  the database system is in recovery mode
+2024-12-16 10:16:28.786 GMT [105] FATAL:  the database system is in recovery mode
+2024-12-16 10:16:28.744 GMT [104] FATAL:  the database system is in recovery mode
+2024-12-16 10:16:28.724 GMT [100] LOG:  database system was interrupted; last known up at 2024-12-16 10:15:46 GMT
+2024-12-16 10:16:28.721 GMT [103] FATAL:  the database system is in recovery mode
+2024-12-16 10:16:28.696 GMT [1] LOG:  all server processes terminated; reinitializing
+2024-12-16 10:16:28.645 GMT [99] FATAL:  the database system is in recovery mode
+2024-12-16 10:16:28.527 GMT [1] LOG:  terminating any other active server processes
+FROM pg_stat_archiver
+extract(epoch from now() - last_archived_time) AS last_archive_age
+"SELECT *,"
+2024-12-16 10:16:28.519 GMT [1] DETAIL:  Failed process was running:
+2024-12-16 10:16:28.519 GMT [1] LOG:  server process (PID 98) was terminated by signal 9: Killed
+2024-12-16 10:15:46.931 GMT [1] LOG:  database system is ready to accept connections
+"2024-12-16 10:15:46.719 GMT [83] LOG:  checkpoint complete: wrote 48 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.047 s, sync=0.030 s, total=0.126 s; sync files=40, longest=0.011 s, average=0.001 s; distance=152 kB, estimate=152 kB; lsn=0/192E9C0, redo lsn=0/192E9C0"
+2024-12-16 10:15:46.602 GMT [83] LOG:  checkpoint starting: end-of-recovery immediate wait
+"2024-12-16 10:15:46.483 GMT [82] LOG:  redo done at 0/192E988 system usage: CPU: user: 0.00 s, system: 0.03 s, elapsed: 0.05 s"
+"2024-12-16 10:15:46.483 GMT [82] LOG:  invalid record length at 0/192E9C0: expected at least 24, got 0"
+2024-12-16 10:15:46.378 GMT [1] LOG:  database system is ready to accept connections
+2024-12-16 10:15:46.426 GMT [82] LOG:  redo starts at 0/19089F0
+2024-12-16 10:15:46.409 GMT [82] LOG:  database system was not properly shut down; automatic recovery in progress
+"2024-12-16 10:15:46.229 GMT [83] LOG:  checkpoint complete: wrote 55 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.371 s, sync=0.026 s, total=0.452 s; sync files=43, longest=0.009 s, average=0.001 s; distance=184 kB, estimate=184 kB; lsn=0/1936D50, redo lsn=0/1936D50"
+2024-12-16 10:15:45.786 GMT [83] LOG:  checkpoint starting: end-of-recovery immediate wait
+"2024-12-16 10:15:45.644 GMT [82] LOG:  redo done at 0/1936D18 system usage: CPU: user: 0.00 s, system: 0.04 s, elapsed: 0.08 s"
+"2024-12-16 10:15:45.644 GMT [82] LOG:  invalid record length at 0/1936D50: expected at least 24, got 0"
+2024-12-16 10:15:45.560 GMT [82] LOG:  redo starts at 0/19089E8
+2024-12-16 10:15:45.548 GMT [82] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-12-16 10:15:44.812 GMT [82] LOG:  database system was interrupted; last known up at 2024-12-16 10:15:11 GMT
+2024-12-16 10:15:42.892 GMT [1] LOG:  all server processes terminated; reinitializing
+2024-12-16 10:15:41.987 GMT [1] LOG:  terminating any other active server processes
+2024-12-16 10:15:41.987 GMT [1] DETAIL:  Failed process was running: SELECT * FROM pg_stat_database_conflicts;
+2024-12-16 10:15:41.987 GMT [1] LOG:  server process (PID 80) was terminated by signal 9: Killed
+2024-12-16 10:15:41.222 GMT [82] LOG:  database system was interrupted; last known up at 2024-12-16 10:15:10 GMT
+2024-12-16 10:15:41.129 GMT [1] LOG:  all server processes terminated; reinitializing
+2024-12-16 10:15:41.085 GMT [1] LOG:  terminating any other active server processes
+2024-12-16 10:15:41.085 GMT [1] DETAIL:  Failed process was running: SELECT * FROM pg_stat_bgwriter;
+2024-12-16 10:15:41.085 GMT [1] LOG:  server process (PID 80) was terminated by signal 9: Killed
+"2024-12-16 10:15:22.947 GMT [70] NOTICE:  table ""product_model"" does not exist, skipping"
+"2024-12-16 10:15:19.453 GMT [70] NOTICE:  table ""user_model"" does not exist, skipping"
+"2024-12-16 10:15:19.353 GMT [70] NOTICE:  table ""k6model"" does not exist, skipping"
+2024-12-16 10:15:11.189 GMT [1] LOG:  database system is ready to accept connections
+2024-12-16 10:15:11.141 GMT [66] LOG:  database system was shut down at 2024-12-16 10:15:10 GMT
+"2024-12-16 10:15:11.108 GMT [1] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 10:15:11.067 GMT [1] LOG:  listening on IPv6 address ""::"", port 5432"
+"2024-12-16 10:15:11.067 GMT [1] LOG:  listening on IPv4 address ""0.0.0.0"", port 5432"
+"2024-12-16 10:15:11.067 GMT [1] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 10:15:10.924 GMT [1] LOG:  database system is ready to accept connections
+2024-12-16 10:15:10.875 GMT [66] LOG:  database system was shut down at 2024-12-16 10:15:10 GMT
+2024-12-16 10:15:10.954 GMT [48] LOG:  database system is shut down
+"2024-12-16 10:15:10.719 GMT [1] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 10:15:10.686 GMT [1] LOG:  listening on IPv6 address ""::"", port 5432"
+"2024-12-16 10:15:10.686 GMT [1] LOG:  listening on IPv4 address ""0.0.0.0"", port 5432"
+"2024-12-16 10:15:10.686 GMT [1] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+"2024-12-16 10:15:10.694 GMT [50] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.081 s, sync=1.398 s, total=2.594 s; sync files=301, longest=0.112 s, average=0.005 s; distance=4238 kB, estimate=4238 kB; lsn=0/1908978, redo lsn=0/1908978"
+2024-12-16 10:15:10.476 GMT [48] LOG:  database system is shut down
+"2024-12-16 10:15:10.093 GMT [50] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.644 s, sync=1.350 s, total=3.112 s; sync files=301, longest=0.036 s, average=0.005 s; distance=4238 kB, estimate=4238 kB; lsn=0/1908970, redo lsn=0/1908970"
+2024-12-16 10:15:08.101 GMT [50] LOG:  checkpoint starting: shutdown immediate
+2024-12-16 10:15:08.089 GMT [50] LOG:  shutting down
+"2024-12-16 10:15:08.068 GMT [48] LOG:  background worker ""logical replication launcher"" (PID 55) exited with exit code 1"
+2024-12-16 10:15:07.973 GMT [48] LOG:  aborting any active transactions
+2024-12-16 10:15:07.956 GMT [48] LOG:  received fast shutdown request
+2024-12-16 10:15:07.008 GMT [50] LOG:  checkpoint starting: shutdown immediate
+2024-12-16 10:15:06.977 GMT [50] LOG:  shutting down
+"2024-12-16 10:15:06.964 GMT [48] LOG:  background worker ""logical replication launcher"" (PID 55) exited with exit code 1"
+2024-12-16 10:15:06.905 GMT [48] LOG:  aborting any active transactions
+2024-12-16 10:15:06.883 GMT [48] LOG:  received fast shutdown request
+2024-12-16 10:15:05.335 GMT [48] LOG:  database system is ready to accept connections
+2024-12-16 10:15:05.259 GMT [52] LOG:  database system was shut down at 2024-12-16 10:15:01 GMT
+"2024-12-16 10:15:05.233 GMT [48] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 10:15:05.222 GMT [48] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 10:15:04.093 GMT [48] LOG:  database system is ready to accept connections
+2024-12-16 10:15:04.052 GMT [52] LOG:  database system was shut down at 2024-12-16 10:14:59 GMT
+"2024-12-16 10:15:04.009 GMT [48] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 10:15:04.001 GMT [48] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@23a5959f (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@70008779 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@2df1c729 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@34a84b08 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7d49b6fa (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+"SQL Error: 0, SQLState: 08006"
+"SQL Error: 0, SQLState: 08006"
+"HikariPool-1 - Connection org.postgresql.jdbc.PgConnection@109b8c52 marked as broken because of SQLSTATE(08006), ErrorCode(0)"
+"HikariPool-1 - Connection org.postgresql.jdbc.PgConnection@5e69f8ce marked as broken because of SQLSTATE(08006), ErrorCode(0)"
+"HikariPool-1 - Connection org.postgresql.jdbc.PgConnection@47b16dee marked as broken because of SQLSTATE(08006), ErrorCode(0)"
+"HikariPool-1 - Connection org.postgresql.jdbc.PgConnection@64908599 marked as broken because of SQLSTATE(08006), ErrorCode(0)"
+"HikariPool-1 - Connection org.postgresql.jdbc.PgConnection@1ce785ca marked as broken because of SQLSTATE(08006), ErrorCode(0)"
+User not found
+User not found
+User not found
+User not found
+User not found
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@ea00122 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@70e3d9ae (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@45180292 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5df1022 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5fbbe074 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@37933ec5 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5833bc44 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@57e175ff (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@48a478d5 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7e5b449c (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"
+"table ""user_model"" does not exist, skipping"
+"SQL Warning Code: 0, SQLState: 00000"
+"table ""k6model"" does not exist, skipping"
+"SQL Warning Code: 0, SQLState: 00000"
+Product not found
+Product not found
+Product not found
+Product not found
+Product not found
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@632b23a6 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@e6dbe95 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@2a447a9 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@2cbc3abb (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@4d02cc25 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5789a9f3 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6917023 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@28f31a27 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6f5ae4e1 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6340dc5f (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"
+Getting all users
+GET /api/user/all
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/0
+Buying product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+User ID : 5 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+Getting all users
+GET /api/user/all
+Getting all users
+GET /api/user/all
+Getting all users
+GET /api/user/all
+Http Response received
+Http Response received
+Http Response received
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/0
+Http request to product-app http://product-app:8080/api/product/get/0
+Http request to product-app http://product-app:8080/api/product/get/0
+Http request to product-app http://product-app:8080/api/product/get/0
+Buying product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+Buying product ID : 0 User ID : 0
+Buying product ID : 0 User ID : 0
+Buying product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+User ID : 4 saved
+Saving user
+POST /api/user/create Name : test-k6
+User ID : 3 saved
+Saving user
+POST /api/user/create Name : test-k6
+User ID : 2 saved
+User ID : 1 saved
+Saving user
+POST /api/user/create Name : test-k6
+Saving user
+POST /api/user/create Name : test-k6
+Completed initialization in 3 ms
+Initializing Servlet 'dispatcherServlet'
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Started UserSpringBootApplication in 23.761 seconds (process running for 31.313)
+Tomcat started on port 8080 (http) with context path '/'
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+HikariPool-1 - Start completed.
+HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7e5b449c
+HikariPool-1 - Starting...
+No LoadTimeWeaver setup: ignoring JPA class transformer
+HHH000026: Second-level cache disabled
+HHH000412: Hibernate ORM core version 6.5.3.Final
+HHH000204: Processing PersistenceUnitInfo [name: default]
+Root WebApplicationContext: initialization completed in 4413 ms
+Initializing Spring embedded WebApplicationContext
+Starting Servlet engine: [Apache Tomcat/10.1.31]
+Starting service [Tomcat]
+Tomcat initialized with port 8080 (http)
+Finished Spring Data repository scanning in 124 ms. Found 2 JPA repository interfaces.
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"No active profile set, falling back to 1 default profile: ""default"""
+Starting UserSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+Getting all users
+GET /api/product/all
+Getting product by id ID : 0
+GET /api/product/get/0
+Product ID : 5 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Getting all users
+GET /api/product/all
+Getting all users
+GET /api/product/all
+Getting all users
+GET /api/product/all
+Getting product by id ID : 0
+GET /api/product/get/0
+Getting product by id ID : 0
+GET /api/product/get/0
+Getting product by id ID : 0
+Getting product by id ID : 0
+GET /api/product/get/0
+GET /api/product/get/0
+Product ID : 4 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Product ID : 2 saved
+Product ID : 3 saved
+Product ID : 1 saved
+Saving product Name : test-k62
+Saving product Name : test-k62
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+POST /api/product/create Name : test-k62
+POST /api/product/create Name : test-k62
+Completed initialization in 3 ms
+Initializing Servlet 'dispatcherServlet'
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Started ProductSpringBootApplication in 22.915 seconds (process running for 30.928)
+Tomcat started on port 8080 (http) with context path '/'
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+"HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown"
+HikariPool-1 - Start completed.
+HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6f5ae4e1
+HikariPool-1 - Starting...
+No LoadTimeWeaver setup: ignoring JPA class transformer
+HHH000026: Second-level cache disabled
+HHH000412: Hibernate ORM core version 6.6.2.Final
+HHH000204: Processing PersistenceUnitInfo [name: default]
+Root WebApplicationContext: initialization completed in 4467 ms
+Initializing Spring embedded WebApplicationContext
+Starting Servlet engine: [Apache Tomcat/10.1.33]
+Starting service [Tomcat]
+Tomcat initialized with port 8080 (http)
+Finished Spring Data repository scanning in 150 ms. Found 1 JPA repository interface.
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"No active profile set, falling back to 1 default profile: ""default"""
+Starting ProductSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.jpa.JpaSystemException: Unable to rollback against JDBC Connection] with root cause
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.jpa.JpaSystemException: Unable to rollback against JDBC Connection] with root cause
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataAccessResourceFailureException: Hibernate transaction: Unable to commit against JDBC Connection; An I/O error occurred while sending to the backend.] with root cause
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataAccessResourceFailureException: Hibernate transaction: Unable to commit against JDBC Connection; An I/O error occurred while sending to the backend.] with root cause
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataAccessResourceFailureException: Hibernate transaction: Unable to commit against JDBC Connection; An I/O error occurred while sending to the backend.] with root cause
+Application exception overridden by rollback exception
+Application exception overridden by rollback exception
+An I/O error occurred while sending to the backend.
+An I/O error occurred while sending to the backend.

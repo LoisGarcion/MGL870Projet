@@ -14,3 +14,12 @@ scrape_configs:
     scrape_interval: 5s
     static_configs:
       - targets: [ 'k6_exporter:9091' ]
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: [ 'cadvisor:8080' ]
+  - job_name: 'dbuser'
+    static_configs:
+      - targets: [ 'dbuser_exporter:9187' ]
+  - job_name: 'dbproduct'
+    static_configs:
+      - targets: [ 'dbproduct_exporter:9187' ]

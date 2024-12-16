@@ -1,116 +1,135 @@
+import os
 import csv
-import json
 import re
 from collections import Counter
-
 import pandas as pd
 from drain3 import TemplateMiner
 from drain3.template_miner_config import TemplateMinerConfig
 
-# Initialize TemplateMiner with configuration
+# Initialize TemplateMiner
 config = TemplateMinerConfig()
-config.load("drain3.ini")
 config.profiling_enabled = True
 drain_parser = TemplateMiner(config=config)
 
-# Function to extract and write content
-def process_log_file(input_file, output_file):
-    with open(input_file, "r") as infile:
-        log_content = infile.read()
-    # Extract the parts enclosed in "||"
-    matches = re.findall(r'"timeUnixNano":"(.*?)".*?"body":\{"stringValue":"(.*?)"}', log_content)
-
-    # Write the isolated parts to the output file
-    with open(output_file, "w") as outfile:
-        for time, body in matches:
-            outfile.write(f"TimeUnixNano: {time}, Body: {body}\n")
-
-# Process the log file
-process_log_file("../Collector/otel-collector.log","./formatted_log.log")
-
+# Log pattern for parsing log content
 log_pattern = re.compile(
-    r'timeunixnano: (?P<Timestamp>\d+),\s*'  # Match timeunixnano (lowercase) with digits
-    r'body:*(?P<Content>.*)'  # Match body wrapped in || and capture the content inside
+    r'(?P<Content>.*)'
+)
+log_pattern_no_quotes_db = re.compile(
+    r'^(?P<Date>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d+ gmt) '  # Matches timestamp
+    r'\[\d+\] (?:notice|log|error|warning|info|debug):\s+'  # Matches log level
+    r'(?P<Content>.+)$'  # Matches the log message content
 )
 
-# Step 1: Parse logs and generate templates
-templates = {}
-parsed_events = []
+log_pattern_with_quotes_db = re.compile(
+    r'^"(?P<Date>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d+ gmt) '  # Matches timestamp inside quotes
+    r'\[\d+\] (?:notice|log|error|warning|info|debug):\s+'  # Matches log level
+    r'(?P<Content>.+)"$'  # Matches log message content and ensures it ends with a quote
+)
 
+# Directories
+anomaly_dir = "anomalyLogs"
+normal_dir = "normalLogs"
 
-with open("./formatted_log.log", "r", encoding='utf-8') as f:
-    logs = f.readlines()
-for i,line in enumerate(logs):
-    line = line.lower()
-    match = log_pattern.match(line)
-    if match :
-        log_content = match.group("Content")
-        drain_parser.add_log_message(log_content)
-    else :
-        print(f"No match for line {i}: {line}")
+# Function to process log files and label events
+def process_logs(directory, label):
+    events = []
+    for file_name in os.listdir(directory):
+        if file_name.endswith(".csv"):
+            file_path = os.path.join(directory, file_name)
+            with open(file_path, "r", encoding="utf-8") as f:
+                logs = f.readlines()
 
-for i,line in enumerate(logs):
-    line = line.lower()
-    match = log_pattern.match(line)
-    if match :
-        log_content = match.group("Content")
-        result = drain_parser.match(log_content)
-        if result :
-            print(f"Matched line {i} with template {result.cluster_id}")
-            template_id = result.cluster_id
-            template_description = result.get_template()
-            parsed_events.append({
-                "Timestamp": match.group("Timestamp"),
-                "Template ID": template_id,
-            })
-            if template_id not in templates:
-                templates[template_id] = template_description
-        else :
-            print(f"No template found for line {i}: {line}")
-    else :
-        print(f"No match for line {i}: {line}")
+            for line in logs:
+                line = line.strip().lower()
+                match = log_pattern_no_quotes_db.match(line)
+                if match:
+                    log_content = match.group("Content")
+                    result = drain_parser.add_log_message(log_content)
+                else:
+                    match = log_pattern_with_quotes_db.match(line)
+                    if match:
+                        log_content = match.group("Content")
+                        result = drain_parser.add_log_message(log_content)
+                    else:
+                        match = log_pattern.match(line)
+                        if match:
+                            log_content = match.group("Content")
+                            result = drain_parser.add_log_message(log_content)
 
-print(f"Found {len(templates)} templates and {len(parsed_events)} parsed events")
+            for line in logs:
+                line = line.strip().lower()
+                match = log_pattern_no_quotes_db.match(line)
+                if match:
+                    log_content = match.group("Content")
+                    result = drain_parser.match(log_content)
+                    if result:
+                        events.append({
+                            "File": file_name,
+                            "Template ID": result.cluster_id,
+                            "Label": label
+                        })
+                else:
+                    match = log_pattern_with_quotes_db.match(line)
+                    if match:
+                        log_content = match.group("Content")
+                        result = drain_parser.match(log_content)
+                        if result:
+                            events.append({
+                                "File": file_name,
+                                "Template ID": result.cluster_id,
+                                "Label": label
+                            })
+                    else:
+                        match = log_pattern.match(line)
+                        if match:
+                            log_content = match.group("Content")
+                            result = drain_parser.match(log_content)
+                            if result:
+                                events.append({
+                                    "File": file_name,
+                                    "Template ID": result.cluster_id,
+                                    "Label": label
+                                })
+    return events
 
-parsed_df = pd.DataFrame(parsed_events)
-parsed_df.to_csv("parsedlogs.csv", index=False)
+# Process anomaly and normal logs
+anomaly_events = process_logs(anomaly_dir, label=1)
+normal_events = process_logs(normal_dir, label=0)
 
-template_df = pd.DataFrame(templates.items(), columns=["Template ID", "Template Description"])
-template_df.to_csv("templates.csv", index=False)
+# Combine and count events
+events = anomaly_events + normal_events
+event_counts = Counter((event["File"], event["Template ID"]) for event in events)
 
-with open('parsedlogs.csv', 'r') as csv_file:
-    csv_reader = csv.reader(csv_file)
-    next(csv_reader)  # Skip the header
-    events = [(int(row[0]) // 1_000_000, int(row[1])) for row in csv_reader]  # [(timestamp, event_id), ...]
+# Create a matrix with files as rows and templates as columns
+files = set(event["File"] for event in events)
+templates = set(event["Template ID"] for event in events)
 
-# Load the JSON file
-with open('blocks.json', 'r') as json_file:
-    blocks = json.load(json_file)
+matrix = []
+for file_name in files:
+    print(f"Processing {file_name}")
+    row = [file_name, 1 if file_name in [e["File"] for e in anomaly_events] else 0]  # Label based on anomaly or normal
+    row.extend(event_counts.get((file_name, template), 0) for template in templates)
+    matrix.append(row)
 
-# Sort events and blocks by timestamp
-events.sort(key=lambda x: x[0])
-blocks.sort(key=lambda x: x['timestamp'])
+# Write matrix to CSV
+header = ["File", "Label"] + [f"Template_{template}" for template in templates]
+output_file = "event_matrix.csv"
 
-# Count events for each block
-output_rows = []
-event_ids = {event_id for _, event_id in events}  # Unique event IDs for header
-for i, block in enumerate(blocks):
-    start_time = block['timestamp']
-    end_time = blocks[i + 1]['timestamp'] if i + 1 < len(blocks) else float('inf')
+with open(output_file, "w", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerow(header)
+    writer.writerows(matrix)
 
-    # Count events within the range
-    counts = Counter(event_id for timestamp, event_id in events if start_time <= timestamp < end_time)
+print(f"Event matrix saved to {output_file}")
 
-    # Create a row with the block's timestamp, anomaly, and counts
-    row = [block['timestamp'], block['anomaly']]
-    row.extend(counts.get(event_id, 0) for event_id in sorted(event_ids))
-    output_rows.append(row)
+# Write templates to a CSV file
+template_descriptions = [(cluster.cluster_id, cluster.get_template()) for cluster in drain_parser.drain.clusters]
+templates_file = "templates.csv"
 
-# Write to a new CSV file
-header = ['Timestamp', 'Label'] + sorted(event_ids)
-with open('output.csv', 'w', newline='') as output_file:
-    csv_writer = csv.writer(output_file)
-    csv_writer.writerow(header)
-    csv_writer.writerows(output_rows)
+with open(templates_file, "w", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerow(["Template ID", "Template Description"])
+    writer.writerows(template_descriptions)
 
-print("Output CSV created: output.csv")
+print(f"Templates saved to {templates_file}")

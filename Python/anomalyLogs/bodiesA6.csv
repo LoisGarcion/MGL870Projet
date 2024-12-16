@@ -1,0 +1,286 @@
+2024-12-16 10:12:24.701 GMT [1] LOG:  database system is ready to accept connections
+"2024-12-16 10:12:24.663 GMT [28] LOG:  checkpoint complete: wrote 77 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.017 s, sync=0.023 s, total=0.064 s; sync files=44, longest=0.009 s, average=0.001 s; distance=480 kB, estimate=480 kB; lsn=0/1980BD0, redo lsn=0/1980BD0"
+2024-12-16 10:12:24.605 GMT [28] LOG:  checkpoint starting: end-of-recovery immediate wait
+"2024-12-16 10:12:24.508 GMT [30] LOG:  redo done at 0/1980BA8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s"
+"2024-12-16 10:12:24.508 GMT [30] LOG:  invalid record length at 0/1980BD0: expected at least 24, got 0"
+2024-12-16 10:12:24.501 GMT [30] LOG:  redo starts at 0/19089E8
+2024-12-16 10:12:24.453 GMT [30] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-12-16 10:12:24.112 GMT [31] FATAL:  the database system is starting up
+2024-12-16 10:12:24.001 GMT [30] LOG:  database system was interrupted; last known up at 2024-12-16 10:11:54 GMT
+"2024-12-16 10:12:23.912 GMT [1] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 10:12:23.901 GMT [1] LOG:  listening on IPv6 address ""::"", port 5432"
+"2024-12-16 10:12:23.901 GMT [1] LOG:  listening on IPv4 address ""0.0.0.0"", port 5432"
+"2024-12-16 10:12:23.901 GMT [1] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+"2024-12-16 10:12:04.113 GMT [70] NOTICE:  table ""user_model"" does not exist, skipping"
+"2024-12-16 10:12:04.109 GMT [70] NOTICE:  table ""k6model"" does not exist, skipping"
+2024-12-16 10:11:54.609 GMT [1] LOG:  database system is ready to accept connections
+2024-12-16 10:11:54.500 GMT [66] LOG:  database system was shut down at 2024-12-16 10:11:53 GMT
+"2024-12-16 10:11:54.412 GMT [1] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 10:11:54.400 GMT [1] LOG:  listening on IPv6 address ""::"", port 5432"
+"2024-12-16 10:11:54.400 GMT [1] LOG:  listening on IPv4 address ""0.0.0.0"", port 5432"
+"2024-12-16 10:11:54.399 GMT [1] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 10:11:53.699 GMT [48] LOG:  database system is shut down
+"2024-12-16 10:11:53.540 GMT [50] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.493 s, sync=0.124 s, total=1.723 s; sync files=301, longest=0.019 s, average=0.001 s; distance=4238 kB, estimate=4238 kB; lsn=0/1908970, redo lsn=0/1908970"
+2024-12-16 10:11:51.838 GMT [50] LOG:  checkpoint starting: shutdown immediate
+2024-12-16 10:11:51.814 GMT [50] LOG:  shutting down
+"2024-12-16 10:11:51.702 GMT [48] LOG:  background worker ""logical replication launcher"" (PID 55) exited with exit code 1"
+2024-12-16 10:11:51.311 GMT [48] LOG:  aborting any active transactions
+2024-12-16 10:11:51.303 GMT [48] LOG:  received fast shutdown request
+2024-12-16 10:11:44.900 GMT [48] LOG:  database system is ready to accept connections
+2024-12-16 10:11:44.602 GMT [52] LOG:  database system was shut down at 2024-12-16 10:11:42 GMT
+"2024-12-16 10:11:44.508 GMT [48] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 10:11:44.501 GMT [48] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+"2024-12-16 10:11:33.046 GMT [71] NOTICE:  table ""product_model"" does not exist, skipping"
+2024-12-16 10:11:12.747 GMT [1] LOG:  database system is ready to accept connections
+2024-12-16 10:11:12.725 GMT [66] LOG:  database system was shut down at 2024-12-16 10:11:12 GMT
+"2024-12-16 10:11:12.690 GMT [1] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 10:11:12.671 GMT [1] LOG:  listening on IPv6 address ""::"", port 5432"
+"2024-12-16 10:11:12.671 GMT [1] LOG:  listening on IPv4 address ""0.0.0.0"", port 5432"
+"2024-12-16 10:11:12.671 GMT [1] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 10:11:12.545 GMT [48] LOG:  database system is shut down
+"2024-12-16 10:11:12.530 GMT [50] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.091 s, sync=1.357 s, total=1.518 s; sync files=301, longest=0.046 s, average=0.005 s; distance=4238 kB, estimate=4238 kB; lsn=0/1908978, redo lsn=0/1908978"
+2024-12-16 10:11:11.020 GMT [50] LOG:  checkpoint starting: shutdown immediate
+2024-12-16 10:11:11.013 GMT [50] LOG:  shutting down
+"2024-12-16 10:11:11.012 GMT [48] LOG:  background worker ""logical replication launcher"" (PID 55) exited with exit code 1"
+2024-12-16 10:11:11.003 GMT [48] LOG:  aborting any active transactions
+2024-12-16 10:11:10.986 GMT [48] LOG:  received fast shutdown request
+2024-12-16 10:11:10.654 GMT [48] LOG:  database system is ready to accept connections
+2024-12-16 10:11:10.640 GMT [52] LOG:  database system was shut down at 2024-12-16 10:11:09 GMT
+"2024-12-16 10:11:10.608 GMT [48] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 10:11:10.593 GMT [48] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+Product not found
+Product not found
+Product not found
+Product not found
+Product not found
+"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+HHH000342: Could not obtain connection to query metadata
+"SQL Error: 0, SQLState: 08001"
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+HHH000342: Could not obtain connection to query metadata
+"SQL Error: 0, SQLState: 08001"
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+HHH000342: Could not obtain connection to query metadata
+"SQL Error: 0, SQLState: 08001"
+User not found
+"HikariPool-1 - Connection org.postgresql.jdbc.PgConnection@2aef651 marked as broken because of SQLSTATE(08006), ErrorCode(0)"
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7e87fe8e (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5ea4f585 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@2d8f3bea (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@289516aa (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@23f77499 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+"HikariPool-1 - Connection org.postgresql.jdbc.PgConnection@5b11b860 marked as broken because of SQLSTATE(08006), ErrorCode(0)"
+"SQL Error: 0, SQLState: 08006"
+"HikariPool-1 - Connection org.postgresql.jdbc.PgConnection@9a8bae3 marked as broken because of SQLSTATE(08006), ErrorCode(0)"
+"HikariPool-1 - Connection org.postgresql.jdbc.PgConnection@6c93afbf marked as broken because of SQLSTATE(08006), ErrorCode(0)"
+"HikariPool-1 - Connection org.postgresql.jdbc.PgConnection@223b5ba1 marked as broken because of SQLSTATE(08006), ErrorCode(0)"
+User not found
+User not found
+User not found
+User not found
+"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"
+"table ""user_model"" does not exist, skipping"
+"SQL Warning Code: 0, SQLState: 00000"
+"table ""k6model"" does not exist, skipping"
+"SQL Warning Code: 0, SQLState: 00000"
+Getting all users
+GET /api/product/all
+Getting product by id ID : 0
+GET /api/product/get/0
+Product ID : 5 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Getting product by id ID : 0
+GET /api/product/get/0
+Product ID : 4 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Getting product by id ID : 0
+GET /api/product/get/0
+Product ID : 3 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Getting product by id ID : 0
+GET /api/product/get/0
+Product ID : 2 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Getting product by id ID : 0
+GET /api/product/get/0
+Product ID : 1 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Completed initialization in 2 ms
+Initializing Servlet 'dispatcherServlet'
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Started ProductSpringBootApplication in 18.558 seconds (process running for 27.373)
+Tomcat started on port 8080 (http) with context path '/'
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+"HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown"
+HikariPool-1 - Start completed.
+HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@640c2749
+HikariPool-1 - Starting...
+No LoadTimeWeaver setup: ignoring JPA class transformer
+HHH000026: Second-level cache disabled
+HHH000412: Hibernate ORM core version 6.6.2.Final
+HHH000204: Processing PersistenceUnitInfo [name: default]
+Root WebApplicationContext: initialization completed in 6303 ms
+Initializing Spring embedded WebApplicationContext
+Starting Servlet engine: [Apache Tomcat/10.1.33]
+Starting service [Tomcat]
+Tomcat initialized with port 8080 (http)
+Finished Spring Data repository scanning in 190 ms. Found 1 JPA repository interface.
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"No active profile set, falling back to 1 default profile: ""default"""
+Starting ProductSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."
+Stopping service [Tomcat]
+HikariPool-1 - Starting...
+No LoadTimeWeaver setup: ignoring JPA class transformer
+HHH000026: Second-level cache disabled
+HHH000412: Hibernate ORM core version 6.5.3.Final
+HHH000204: Processing PersistenceUnitInfo [name: default]
+Root WebApplicationContext: initialization completed in 1824 ms
+Initializing Spring embedded WebApplicationContext
+Starting Servlet engine: [Apache Tomcat/10.1.31]
+Starting service [Tomcat]
+Tomcat initialized with port 8080 (http)
+Finished Spring Data repository scanning in 65 ms. Found 2 JPA repository interfaces.
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"No active profile set, falling back to 1 default profile: ""default"""
+Starting UserSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."
+Stopping service [Tomcat]
+HikariPool-1 - Starting...
+No LoadTimeWeaver setup: ignoring JPA class transformer
+HHH000026: Second-level cache disabled
+HHH000412: Hibernate ORM core version 6.5.3.Final
+HHH000204: Processing PersistenceUnitInfo [name: default]
+Root WebApplicationContext: initialization completed in 2419 ms
+Initializing Spring embedded WebApplicationContext
+Starting Servlet engine: [Apache Tomcat/10.1.31]
+Starting service [Tomcat]
+Tomcat initialized with port 8080 (http)
+Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"No active profile set, falling back to 1 default profile: ""default"""
+Starting UserSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+"
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled."
+Stopping service [Tomcat]
+HikariPool-1 - Starting...
+No LoadTimeWeaver setup: ignoring JPA class transformer
+HHH000026: Second-level cache disabled
+HHH000412: Hibernate ORM core version 6.5.3.Final
+HHH000204: Processing PersistenceUnitInfo [name: default]
+Root WebApplicationContext: initialization completed in 7172 ms
+Initializing Spring embedded WebApplicationContext
+Starting Servlet engine: [Apache Tomcat/10.1.31]
+Starting service [Tomcat]
+Tomcat initialized with port 8080 (http)
+Finished Spring Data repository scanning in 209 ms. Found 2 JPA repository interfaces.
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"No active profile set, falling back to 1 default profile: ""default"""
+Starting UserSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+Getting all users
+GET /api/user/all
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/0
+Buying product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/0
+Buying product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+User ID : 3 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/0
+Buying product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+User ID : 2 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/0
+Buying product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+User ID : 1 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/0
+Buying product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+Completed initialization in 3 ms
+Initializing Servlet 'dispatcherServlet'
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Started UserSpringBootApplication in 8.978 seconds (process running for 12.302)
+Tomcat started on port 8080 (http) with context path '/'
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+HikariPool-1 - Start completed.
+HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2aef651
+HikariPool-1 - Starting...
+No LoadTimeWeaver setup: ignoring JPA class transformer
+HHH000026: Second-level cache disabled
+HHH000412: Hibernate ORM core version 6.5.3.Final
+HHH000204: Processing PersistenceUnitInfo [name: default]
+Root WebApplicationContext: initialization completed in 3014 ms
+Initializing Spring embedded WebApplicationContext
+Starting Servlet engine: [Apache Tomcat/10.1.31]
+Starting service [Tomcat]
+Tomcat initialized with port 8080 (http)
+Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"No active profile set, falling back to 1 default profile: ""default"""
+Starting UserSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+Application run failed
+Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+Connection to dbuser:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+Application run failed
+Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+Connection to dbuser:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+Application run failed
+Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+Connection to dbuser:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataAccessResourceFailureException: Hibernate transaction: Unable to commit against JDBC Connection; An I/O error occurred while sending to the backend.] with root cause
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataAccessResourceFailureException: Hibernate transaction: Unable to commit against JDBC Connection; An I/O error occurred while sending to the backend.] with root cause
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataAccessResourceFailureException: Hibernate transaction: Unable to commit against JDBC Connection; An I/O error occurred while sending to the backend.] with root cause
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataAccessResourceFailureException: Hibernate transaction: Unable to commit against JDBC Connection; An I/O error occurred while sending to the backend.] with root cause
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.jpa.JpaSystemException: Unable to rollback against JDBC Connection] with root cause
+Application exception overridden by rollback exception
+An I/O error occurred while sending to the backend.

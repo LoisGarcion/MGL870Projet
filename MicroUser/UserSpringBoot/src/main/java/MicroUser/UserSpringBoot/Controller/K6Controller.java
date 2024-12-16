@@ -18,7 +18,6 @@ public class K6Controller {
 
     @PostMapping("/createBlock")
     public K6Model createBlock (@RequestBody K6Model block) {
-        log.info("Creating block {}", block.isAnomaly());
         return k6Service.saveK6Model(block);
     }
 

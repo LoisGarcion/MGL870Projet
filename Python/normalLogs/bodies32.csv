@@ -1,0 +1,391 @@
+"2024-12-16 11:15:06.376 GMT [71] NOTICE:  table ""product_model"" does not exist, skipping"
+"2024-12-16 11:15:05.404 GMT [71] NOTICE:  table ""user_model"" does not exist, skipping"
+"2024-12-16 11:15:05.399 GMT [71] NOTICE:  table ""k6model"" does not exist, skipping"
+2024-12-16 11:14:51.123 GMT [1] LOG:  database system is ready to accept connections
+2024-12-16 11:14:51.108 GMT [66] LOG:  database system was shut down at 2024-12-16 11:14:50 GMT
+"2024-12-16 11:14:51.076 GMT [1] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 11:14:51.052 GMT [1] LOG:  listening on IPv6 address ""::"", port 5432"
+"2024-12-16 11:14:51.052 GMT [1] LOG:  listening on IPv4 address ""0.0.0.0"", port 5432"
+"2024-12-16 11:14:51.051 GMT [1] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 11:14:50.905 GMT [48] LOG:  database system is shut down
+"2024-12-16 11:14:50.892 GMT [50] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.077 s, sync=0.274 s, total=0.408 s; sync files=301, longest=0.011 s, average=0.001 s; distance=4238 kB, estimate=4238 kB; lsn=0/1908978, redo lsn=0/1908978"
+2024-12-16 11:14:50.494 GMT [50] LOG:  checkpoint starting: shutdown immediate
+2024-12-16 11:14:50.483 GMT [50] LOG:  shutting down
+"2024-12-16 11:14:50.478 GMT [48] LOG:  background worker ""logical replication launcher"" (PID 55) exited with exit code 1"
+2024-12-16 11:14:50.473 GMT [48] LOG:  aborting any active transactions
+2024-12-16 11:14:50.458 GMT [48] LOG:  received fast shutdown request
+2024-12-16 11:14:50.095 GMT [48] LOG:  database system is ready to accept connections
+2024-12-16 11:14:50.078 GMT [52] LOG:  database system was shut down at 2024-12-16 11:14:46 GMT
+"2024-12-16 11:14:50.041 GMT [48] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 11:14:50.028 GMT [48] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 11:14:47.035 GMT [1] LOG:  database system is ready to accept connections
+2024-12-16 11:14:47.008 GMT [66] LOG:  database system was shut down at 2024-12-16 11:14:46 GMT
+"2024-12-16 11:14:46.943 GMT [1] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 11:14:46.914 GMT [1] LOG:  listening on IPv6 address ""::"", port 5432"
+"2024-12-16 11:14:46.914 GMT [1] LOG:  listening on IPv4 address ""0.0.0.0"", port 5432"
+"2024-12-16 11:14:46.913 GMT [1] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+2024-12-16 11:14:46.807 GMT [48] LOG:  database system is shut down
+"2024-12-16 11:14:46.796 GMT [50] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.676 s, total=0.851 s; sync files=301, longest=0.044 s, average=0.003 s; distance=4238 kB, estimate=4238 kB; lsn=0/1908970, redo lsn=0/1908970"
+2024-12-16 11:14:45.958 GMT [50] LOG:  checkpoint starting: shutdown immediate
+2024-12-16 11:14:45.945 GMT [50] LOG:  shutting down
+"2024-12-16 11:14:45.943 GMT [48] LOG:  background worker ""logical replication launcher"" (PID 55) exited with exit code 1"
+2024-12-16 11:14:45.940 GMT [48] LOG:  aborting any active transactions
+2024-12-16 11:14:45.915 GMT [48] LOG:  received fast shutdown request
+2024-12-16 11:14:45.564 GMT [48] LOG:  database system is ready to accept connections
+2024-12-16 11:14:45.552 GMT [52] LOG:  database system was shut down at 2024-12-16 11:14:44 GMT
+"2024-12-16 11:14:45.460 GMT [48] LOG:  listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432"""
+"2024-12-16 11:14:45.449 GMT [48] LOG:  starting PostgreSQL 17.2 (Debian 17.2-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit"
+Product not found
+Product not found
+Product not found
+"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"
+User not found
+User not found
+User not found
+"spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning"
+"table ""user_model"" does not exist, skipping"
+"SQL Warning Code: 0, SQLState: 00000"
+"table ""k6model"" does not exist, skipping"
+"SQL Warning Code: 0, SQLState: 00000"
+Getting all users
+GET /api/product/all
+Product found ID : 2
+Getting all users
+Getting product by id ID : 2
+GET /api/product/get/2
+GET /api/product/all
+Getting all users
+GET /api/product/all
+Product ID : 18 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Product found ID : 8
+Getting product by id ID : 8
+GET /api/product/get/8
+Product found ID : 5
+Getting product by id ID : 5
+GET /api/product/get/5
+Product ID : 17 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Product ID : 16 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Product found ID : 1
+Getting all users
+GET /api/product/all
+Getting product by id ID : 1
+GET /api/product/get/1
+Getting all users
+GET /api/product/all
+Product ID : 15 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Product found ID : 7
+Getting product by id ID : 7
+GET /api/product/get/7
+Product found ID : 4
+Getting product by id ID : 4
+GET /api/product/get/4
+Product ID : 14 saved
+Product ID : 13 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Getting all users
+GET /api/product/all
+Getting all users
+GET /api/product/all
+Getting product by id ID : 0
+GET /api/product/get/0
+Product ID : 12 saved
+Product found ID : 6
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting product by id ID : 6
+GET /api/product/get/6
+Product found ID : 3
+Getting product by id ID : 3
+GET /api/product/get/3
+Product ID : 11 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Product ID : 10 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Getting all users
+GET /api/product/all
+Product found ID : 5
+Getting product by id ID : 5
+GET /api/product/get/5
+Product found ID : 2
+Getting product by id ID : 2
+Product ID : 9 saved
+GET /api/product/get/2
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Product ID : 8 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Getting all users
+GET /api/product/all
+Product found ID : 4
+Getting product by id ID : 4
+GET /api/product/get/4
+Product found ID : 1
+Product ID : 7 saved
+Getting product by id ID : 1
+GET /api/product/get/1
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Product ID : 6 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Getting all users
+GET /api/product/all
+Product found ID : 3
+Getting product by id ID : 3
+GET /api/product/get/3
+Getting product by id ID : 0
+GET /api/product/get/0
+Product ID : 5 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Product ID : 4 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Product found ID : 2
+Getting product by id ID : 2
+GET /api/product/get/2
+Product ID : 3 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Product found ID : 1
+Getting product by id ID : 1
+GET /api/product/get/1
+Product ID : 2 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Getting all users
+GET /api/product/all
+Getting product by id ID : 0
+GET /api/product/get/0
+Product ID : 1 saved
+Saving product Name : test-k62
+POST /api/product/create Name : test-k62
+Completed initialization in 2 ms
+Initializing Servlet 'dispatcherServlet'
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Started ProductSpringBootApplication in 14.319 seconds (process running for 22.701)
+Tomcat started on port 8080 (http) with context path '/'
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+"HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown"
+HikariPool-1 - Start completed.
+HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@38ebf8dc
+HikariPool-1 - Starting...
+No LoadTimeWeaver setup: ignoring JPA class transformer
+HHH000026: Second-level cache disabled
+HHH000412: Hibernate ORM core version 6.6.2.Final
+HHH000204: Processing PersistenceUnitInfo [name: default]
+Root WebApplicationContext: initialization completed in 4478 ms
+Initializing Spring embedded WebApplicationContext
+Starting Servlet engine: [Apache Tomcat/10.1.33]
+Starting service [Tomcat]
+Tomcat initialized with port 8080 (http)
+Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"No active profile set, falling back to 1 default profile: ""default"""
+Starting ProductSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/1
+Buying product ID : 1 User ID : 1
+POST /api/user/buy Product ID : 1 User ID : 1
+Getting all users
+GET /api/user/all
+User found
+Getting all users
+GET /api/user/all
+Http Response received
+User ID : 15 saved
+User found
+Http Response received
+Saving user
+POST /api/user/create Name : test-k6
+Http request to product-app http://product-app:8080/api/product/get/7
+Buying product ID : 7 User ID : 7
+POST /api/user/buy Product ID : 7 User ID : 7
+Http request to product-app http://product-app:8080/api/product/get/4
+Buying product ID : 4 User ID : 4
+POST /api/user/buy Product ID : 4 User ID : 4
+User ID : 14 saved
+User ID : 13 saved
+Saving user
+POST /api/user/create Name : test-k6
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+Http Response received
+Getting all users
+GET /api/user/all
+Http request to product-app http://product-app:8080/api/product/get/0
+Buying product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+User found
+Getting all users
+GET /api/user/all
+Http Response received
+User found
+Http Response received
+User ID : 12 saved
+Http request to product-app http://product-app:8080/api/product/get/6
+Buying product ID : 6 User ID : 6
+POST /api/user/buy Product ID : 6 User ID : 6
+Saving user
+POST /api/user/create Name : test-k6
+Http request to product-app http://product-app:8080/api/product/get/3
+Buying product ID : 3 User ID : 3
+POST /api/user/buy Product ID : 3 User ID : 3
+User ID : 11 saved
+Saving user
+User ID : 10 saved
+POST /api/user/create Name : test-k6
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Getting all users
+GET /api/user/all
+User found
+Http request to product-app http://product-app:8080/api/product/get/5
+Http Response received
+Buying product ID : 5 User ID : 5
+POST /api/user/buy Product ID : 5 User ID : 5
+Http request to product-app http://product-app:8080/api/product/get/2
+Buying product ID : 2 User ID : 2
+POST /api/user/buy Product ID : 2 User ID : 2
+User ID : 9 saved
+Saving user
+POST /api/user/create Name : test-k6
+User ID : 8 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Getting all users
+GET /api/user/all
+User found
+Http request to product-app http://product-app:8080/api/product/get/4
+Http Response received
+Buying product ID : 4 User ID : 4
+POST /api/user/buy Product ID : 4 User ID : 4
+Http request to product-app http://product-app:8080/api/product/get/1
+Buying product ID : 1 User ID : 1
+POST /api/user/buy Product ID : 1 User ID : 1
+User ID : 7 saved
+Saving user
+POST /api/user/create Name : test-k6
+User ID : 6 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Getting all users
+GET /api/user/all
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/3
+Buying product ID : 3 User ID : 3
+POST /api/user/buy Product ID : 3 User ID : 3
+Http request to product-app http://product-app:8080/api/product/get/0
+Buying product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+User ID : 5 saved
+Saving user
+POST /api/user/create Name : test-k6
+User ID : 4 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/2
+Buying product ID : 2 User ID : 2
+POST /api/user/buy Product ID : 2 User ID : 2
+User ID : 3 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+User found
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/1
+Buying product ID : 1 User ID : 1
+POST /api/user/buy Product ID : 1 User ID : 1
+User ID : 2 saved
+Saving user
+POST /api/user/create Name : test-k6
+Getting all users
+GET /api/user/all
+Http Response received
+Http request to product-app http://product-app:8080/api/product/get/0
+Buying product ID : 0 User ID : 0
+POST /api/user/buy Product ID : 0 User ID : 0
+User ID : 1 saved
+Saving user
+POST /api/user/create Name : test-k6
+Completed initialization in 2 ms
+Initializing Servlet 'dispatcherServlet'
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Started UserSpringBootApplication in 14.7 seconds (process running for 22.935)
+Tomcat started on port 8080 (http) with context path '/'
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+HikariPool-1 - Start completed.
+HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@25000d3d
+HikariPool-1 - Starting...
+No LoadTimeWeaver setup: ignoring JPA class transformer
+HHH000026: Second-level cache disabled
+HHH000412: Hibernate ORM core version 6.5.3.Final
+HHH000204: Processing PersistenceUnitInfo [name: default]
+Root WebApplicationContext: initialization completed in 4543 ms
+Initializing Spring embedded WebApplicationContext
+Starting Servlet engine: [Apache Tomcat/10.1.31]
+Starting service [Tomcat]
+Tomcat initialized with port 8080 (http)
+Finished Spring Data repository scanning in 141 ms. Found 2 JPA repository interfaces.
+Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+"No active profile set, falling back to 1 default profile: ""default"""
+Starting UserSpringBootApplication v0.0.1-SNAPSHOT using Java 17.0.13 with PID 1 (/app/app.jar started by root in /app)
